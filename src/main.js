@@ -77,8 +77,10 @@ axios.defaults.timeout = 10000
 //设置api地址
 //全局定义axios
 // axios.defaults.baseURL = 'http://shkjgw.shkjem.com/api/'
-axios.defaults.baseURL = 'http://39.106.51.133:8093/shibohui/'
-// axios.defaults.baseURL = 'http://10.131.1.67:8093/shibohui/'
+//正式地址
+// axios.defaults.baseURL = 'http://39.106.51.133:8081/dongguan/'
+//测试地址
+axios.defaults.baseURL = 'http://10.131.1.67:8082/dongguan/'
 Vue.prototype.$http = axios
 
 // 图片服务器地址
