@@ -162,13 +162,12 @@
                   <router-link :to="{ name: 'meetarr' }"
                     ><div class="now-title">
                       参加中国食文化国际交流、中国食品科技成果展览、食品产业博览会人员陆续布展
-                    </div></router-link
-                  >
+                    </div>
+                  </router-link>
                   <div id="kms">
                     <router-link :to="{ name: 'meetarr' }">
                       <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                      </router-link
-                    >
+                      </router-link>
                   </div>
                 </li>
               </ul>
