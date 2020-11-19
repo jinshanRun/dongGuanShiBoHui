@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "67428196",
+      "name": "失败-表情",
+      "font_class": "shibaibiaoqing",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "67482430",
+      "name": "提交成功3",
+      "font_class": "tijiaosucceed",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    }
+  ]
+}
