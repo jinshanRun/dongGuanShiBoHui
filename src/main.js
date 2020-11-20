@@ -81,6 +81,7 @@ axios.defaults.timeout = 10000
 // axios.defaults.baseURL = 'http://39.106.51.133:8081/dongguan/'
 //测试地址
 axios.defaults.baseURL = 'http://39.106.51.133:8082/dongguan/'
+// axios.defaults.baseURL = 'http://10.131.1.67:8082/dongguan/'
 Vue.prototype.$http = axios
 
 // 图片服务器地址
