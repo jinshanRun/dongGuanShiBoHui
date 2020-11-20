@@ -7,8 +7,6 @@
 <script src="http://www.yanhuangxueyuan.com/versions/threejsR92/build/three.js"></script>
 <script>
 import * as THREE from "three";
-// import  image from "@/assets/vrimg/trayshi_pano_b.jpg"
-import test from "./Admin/test";
 export default {
 name: "Vr",
   data() {
@@ -55,8 +53,8 @@ name: "Vr",
     test(){
       // this.testGeometry();
       this.geometry.scale(-1, 1, 1);
-      let texture = new THREE.TextureLoader().load('http://10.131.1.67:8082/dongguan/trayshi_pano_l.jpg')
-      let texture1 = new THREE.TextureLoader().load('http://10.131.1.67:8082/dongguan/trayshi_pano_r.jpg')
+      let texture = new THREE.TextureLoader().load('http://39.106.51.133:8082/dongguan/trayshi_pano_l.jpg')
+      let texture1 = new THREE.TextureLoader().load('http://39.106.51.133:8082/dongguan/trayshi_pano_r.jpg')
       this.material = new THREE.MeshBasicMaterial({map: texture,})
       this.material1 = new THREE.MeshBasicMaterial({map: texture1})
       this.mesh = new THREE.Mesh(this.geometry, this.material1,this.material)
