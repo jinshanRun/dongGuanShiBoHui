@@ -94,7 +94,7 @@
 <div id="moresee" v-show="isShowDialog">
   <ul  >
       <li><router-link :to="{name:'mobilemeetarr'}">走进博览会</router-link></li>
-      <li><router-link :to="{name:'mobilekunming'}">走进昆明</router-link></li>
+      <li><router-link :to="{name:'mobilekunming'}">走进东莞</router-link></li>
       <li><router-link :to="{name:'mobileContact'}">联系我们</router-link></li>
   </ul>
 </div>

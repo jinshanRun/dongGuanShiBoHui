@@ -26,19 +26,19 @@
             <li>
               <p>支持单位</p>
               <span>中国轻工业联合会</span>
-              <span> 云南省人民政府</span>
+              <span> 广东省人民政府</span>
             </li>
             <li>
               <p>主办单位</p>
               <span>中国食品报社 </span>
               <span> 商务部投资促进事务局</span>
-              <span> 昆明市人民政府</span>
+              <span> 东莞市人民政府</span>
             </li>
             <li>
               <p>承办单位</p>
               <span>中国国际贸促会商业行业分会 </span>
               <span> 中国食品报社信息中心</span>
-              <span>昆明市商务局</span>
+              <span>东莞市商务局</span>
             </li>
             <li>
               <p>协办单位</p>
@@ -90,7 +90,7 @@ body {
   overflow: hidden;
   // position: absolute;
   // bottom: 0;
-  background-color: #4959ef;
+  background-color: #9a2122;
   &-content {
     width: 1240px;
     margin: 0 auto;

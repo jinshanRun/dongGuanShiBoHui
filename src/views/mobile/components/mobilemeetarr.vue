@@ -73,7 +73,7 @@
                     <p>支持单位：</p>
                     <ul>
                       <li>中国轻工业联合会</li>
-                      <li>云南省人民政府</li>
+                      <li>广东省人民政府</li>
                     </ul>
                   </div>
                   <div class="mobileOriginz">
@@ -81,7 +81,7 @@
                     <ul>
                       <li>中国食品报社</li>
                       <li>商务部投资促进事务局</li>
-                      <li style="margin-top:24px">昆明市人民政府</li>
+                      <li style="margin-top:24px">东莞市人民政府</li>
                     </ul>
                   </div>
                    <div class="mobileOriginz">
@@ -89,7 +89,7 @@
                     <ul>
                       <li>中国国际贸促会商业行业分会</li>
                       <li style="margin-right:0px">中国食品报社信息中心</li>
-                      <li style="margin-top:24px">昆明市商务局</li>
+                      <li style="margin-top:24px">东莞市商务局</li>
                     </ul>
                   </div>
                    <div class="mobileOriginz">

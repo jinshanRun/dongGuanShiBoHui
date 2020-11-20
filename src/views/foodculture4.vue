@@ -2,13 +2,13 @@
     <div class="foodculture">
       <div class="foodculture-banner" ><img src="../assets/img/foodculturebanner.png" alt=""></div>
       <div class="foodculture-content">
-      <p class="foodculturep"><img src="../assets/img/lication.png" alt="">当前位置：<a href="/">首页</a>>食文化><span>云南特产</span></p>
+      <p class="foodculturep"><img src="../assets/img/lication.png" alt="">当前位置：<a href="/">首页</a>>食文化><span>广东特产</span></p>
           <div class="foodculture-content-left">
               <ul class="foodculture-content-list">
                   <li><router-link :to="{name: 'foodculture1'}">食文化</router-link></li>
                   <li><router-link :to="{name: 'foodculture2'}">茶文化</router-link></li>
                   <li><router-link :to="{name: 'foodculture3'}">酒文化</router-link></li>
-                  <li>云南特产</li>
+                  <li>广东特产</li>
               </ul>
           </div>
           <div class="foodculture-content-right">
@@ -64,7 +64,7 @@ export default {
     };
   },
   methods: {
-    //云南特产列表
+    //广东特产列表
       specialCulturePageList(){
           this.$http.get('/cultureapi/specialCulturePageList?page='+this.page+"&size="+this.size).then(res =>{
               if(res.data.returnCode == true && res.data.returnMsg == "OK"){
@@ -86,7 +86,7 @@ export default {
           this.page = val -1;
           this.specialCulturePageList();
       },
-      // 点击进入云南特产详情页
+      // 点击进入广东特产详情页
      wacthFoodsxq(item){
       this.$router.push({path:'foodcultureDetails4',query:{uuid: item.cultureInfoUuid}})
     },

@@ -12,7 +12,7 @@
               </ul>
           </div>
           <div class="expo-content-right">
-              <p style="font-weight:600">2020中国（昆明）食文化国际交流博览会</p>
+              <p style="font-weight:600">2020中国（东莞）食文化国际交流博览会</p>
               <div class="expo-content-xq">
                <div>
                  <p>活动主题：</p>

@@ -8,7 +8,7 @@
                   <li>食文化</li>
                   <li><router-link :to="{name: 'foodculture2'}">茶文化</router-link></li>
                   <li><router-link :to="{name: 'foodculture3'}">酒文化</router-link></li>
-                  <li><router-link :to="{name: 'foodculture4'}">云南特产</router-link></li>
+                  <li><router-link :to="{name: 'foodculture4'}">广东特产</router-link></li>
               </ul>
           </div>
           <div class="foodculture-content-right">

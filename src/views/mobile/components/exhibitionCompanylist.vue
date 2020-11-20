@@ -20,7 +20,7 @@
                     <mt-cell title="食品科技创新成果馆" @click.native="company3('d51083c57a99405fa3e7a5066a556f9720201023172826')" :style="{color:colorflag3}"></mt-cell>
                     <mt-cell title="消费扶贫特色农副产品馆" @click.native="company6('324e4b21bb1b4647bc0a7d1a1ad6655820201023172934')" :style="{color:colorflag6}"></mt-cell>
                     <mt-cell title="中国美食文化馆" @click.native="company5('2b944fcfa09e42d588dcb6b5ace83ea420201023172900')" :style="{color:colorflag5}"></mt-cell>
-                    <mt-cell  title="云南特色馆" @click.native="company2('5f29577d3fd249d1b59d4b9cc2d8ba3920201023172717')" :style="{color:colorflag2}"> </mt-cell>
+                    <mt-cell  title="广东特色馆" @click.native="company2('5f29577d3fd249d1b59d4b9cc2d8ba3920201023172717')" :style="{color:colorflag2}"> </mt-cell>
                     <mt-cell title="精品馆" @click.native="company7('35c6a237bfde4a4181beb441bf169de520201023172953')" :style="{color:colorflag7}"></mt-cell>
                     <mt-cell title="综合馆" @click.native="company4('ee51986b1c97468eb20f28a1fc17826f20201023172841')" :style="{color:colorflag4}"></mt-cell>
 
@@ -90,7 +90,7 @@
 <div id="moresee" v-show="isShowDialog">
   <ul  >
        <li><router-link :to="{name:'mobilemeetarr'}">走进博览会</router-link></li>
-      <li><router-link :to="{name:'mobilekunming'}">走进昆明</router-link></li>
+      <li><router-link :to="{name:'mobilekunming'}">走进东莞</router-link></li>
       <li><router-link :to="{name:'mobileContact'}">联系我们</router-link></li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
           <!-- <el-input v-model="ruleForm.areaUuid"></el-input> -->
             <el-select v-model="ruleForm.areaUuid" style="width:30%">
              <el-option label = "1号馆中华传统好食品馆" value="ff7632e456174ad4b52d6fc76968f35420201023172642">1号馆中华传统好食品馆</el-option>
-             <el-option label = "2号馆云南特色馆" value="5f29577d3fd249d1b59d4b9cc2d8ba3920201023172717">2号馆云南特色馆</el-option>
+             <el-option label = "2号馆广东特色馆" value="5f29577d3fd249d1b59d4b9cc2d8ba3920201023172717">2号馆广东特色馆</el-option>
              <el-option label = "3号馆食品科技创新成果馆" value="d51083c57a99405fa3e7a5066a556f9720201023172826">3号馆食品科技创新成果馆</el-option>
              <el-option label = "4号馆综合馆" value="ee51986b1c97468eb20f28a1fc17826f20201023172841">4号馆综合馆</el-option>
              <el-option label = "5号馆中国美食文化馆" value="2b944fcfa09e42d588dcb6b5ace83ea420201023172900">5号馆中国美食文化馆</el-option>
