@@ -10,7 +10,7 @@
             <el-option label = "食文化" value="食文化">食文化</el-option>
             <el-option label = "茶文化" value="茶文化">茶文化</el-option>
             <el-option label = "酒文化" value="酒文化">酒文化</el-option>
-            <el-option label = "云南特产" value="云南特产">云南特产</el-option>
+            <el-option label = "广东特产" value="广东特产">广东特产</el-option>
         </el-select>
         <el-button style="margin-left: 12%" @click="queryCulture()">搜索</el-button>
         <el-button style="margin-left: 10%" @click="clearQuery()">清空</el-button>
@@ -47,7 +47,7 @@
                             <el-option label = "食文化" value="食文化">食文化</el-option>
                             <el-option label = "茶文化" value="茶文化">茶文化</el-option>
                             <el-option label = "酒文化" value="酒文化">酒文化</el-option>
-                            <el-option label = "云南特产" value="云南特产">云南特产</el-option>
+                            <el-option label = "广东特产" value="广东特产">广东特产</el-option>
                         </el-select>
                     </el-form-item>
                     <el-form-item label="食文化标题" prop="cultureTitle" style="width:80%">

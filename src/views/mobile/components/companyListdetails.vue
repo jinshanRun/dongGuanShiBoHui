@@ -48,7 +48,7 @@
                     <div><span>热门推荐</span></div>
                     <div>
                         <p>{{item.companyName}}</p>
-                        <!-- <p>发布时间：2020-10-30 11:01  <span style="margin-left:30px">来源：云南网</span></p> -->
+                        <!-- <p>发布时间：2020-10-30 11:01  <span style="margin-left:30px">来源：广东网</span></p> -->
                     </div>
                </div>
             </div>

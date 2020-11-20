@@ -10,10 +10,10 @@
           @select="handleSelect"
           :router="router">
           <el-menu-item index="/">首页</el-menu-item>
-          <el-menu-item index="/news" id="nohover">新闻中心</el-menu-item>
-          <el-menu-item index="/meetarr" id="nohover">展会活动</el-menu-item>
+          <el-menu-item index="/news" class="nohover">新闻中心</el-menu-item>
+          <el-menu-item index="/meetarr" class="nohover">展会活动</el-menu-item>
           <el-submenu index="2" id="myhard" style="width:140px">
-            <template slot="title">网上展厅</template>
+            <template slot="title">线上展厅</template>
             <el-menu-item index="/exhins">展会介绍</el-menu-item>
             <el-menu-item index="/xsztVideo">线上展厅</el-menu-item>
             <el-menu-item index="/yunshangVideo">云上展厅</el-menu-item>
@@ -34,13 +34,14 @@
             <el-menu-item index="/expo2">组织机构</el-menu-item>
             <el-menu-item index="/expo3">联系我们</el-menu-item>
           </el-submenu>
-          <el-submenu index="5" style="width:140px">
-            <template slot="title">云南/昆明</template>
-            <el-menu-item index="/kunming1">云南/昆明市情</el-menu-item>
-            <el-menu-item index="/kunming2">产业发展</el-menu-item>
-            <el-menu-item index="/kunming3">魅力昆明</el-menu-item>
-          </el-submenu>
-          <el-menu-item id="nohover"><a href="http://shop.sasmyun.com/" target="_blank">万食通云商城</a></el-menu-item>
+<!--          <el-submenu index="5" style="width:140px">-->
+<!--            <template slot="title">走进东莞</template>-->
+<!--            <el-menu-item index="/kunming1">东莞市情</el-menu-item>-->
+<!--            <el-menu-item index="/kunming2">产业发展</el-menu-item>-->
+<!--            <el-menu-item index="/kunming3">魅力东莞</el-menu-item>-->
+<!--          </el-submenu>-->
+          <el-menu-item class="nohover"><a href="http://www.dg.gov.cn/zjdz/index.html" target="_blank">走进东莞</a></el-menu-item>
+          <el-menu-item class="nohover"><a href="http://shop.sasmyun.com/" target="_blank">万食通云商城</a></el-menu-item>
 
         </el-menu>
       </el-header>
@@ -127,12 +128,12 @@ export default {
     .el-menu--horizontal > .el-menu-item {
         color: #f7f7f7 !important;
         padding: 0 15px !important;
-        font-size: 16px !important;
+        font-size: 18px !important;
         border-bottom: none!important;
         background: none!important;
     }
     .el-menu--horizontal>.el-submenu .el-submenu__title{
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 0px;
         border-bottom: none!important;
         background: none!important;
@@ -154,32 +155,32 @@ export default {
       color: #ffffff!important;
     }
     .el-menu-item:hover {
-        background-color: rgba(24, 41, 157,0.9) !important;
+        background-color: rgb(255,14,51) !important;
         color: #fff!important;
     }
     .el-submenu:hover{
-        background-color: rgba(255, 255, 255,0.3) !important;  //有下拉框的item
+        background-color: rgb(255,14,51) !important;  //有下拉框的item
     }
-    // .el-submenu__title:hover{
-    //     background-color: rgba(39, 39, 39,0.3) !important;
-    // }
+     //.el-submenu__title:hover{
+     //    background-color: rgba(39, 39, 39,0.3) !important;
+     //}
     .el-menu--horizontal>.el-submenu .el-submenu__icon-arrow {
         color: #fff;
     }
     .el-menu-item.is-active {
-        background-color: rgba(255, 255, 255,0.3) !important;
+        background-color: rgb(255,14,51) !important;
         color: #fff;
     }
     .el-submenu__title:hover .el-menu .el-menu--popup .el-menu--popup-bottom-start {
-        background-color: rgba(24, 41, 157, 0.1) !important;
+        background-color: rgb(255,14,51) !important;
         margin-top: 10px !important;
     }
     .el-submenu__title:hover .el-menu .el-menu--popup .el-menu--popup-bottom-start .el-menu-item {
-        background-color: rgba(24, 41, 157,0.4) !important;
+        background-color: rgb(255,14,51) !important;
         margin-top: 10px !important;
     }
-    #nohover:hover{
-     background-color: rgba(255, 255, 255,0.3) !important;
+    .nohover:hover{
+     background-color: rgb(255,14,51) !important;
     }
     .el-main {
         padding: 0 !important;
