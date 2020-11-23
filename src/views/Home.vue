@@ -140,7 +140,7 @@
           <p class="todayp2">开幕式</p>
           <li>
             <span>会议名称： </span>
-            <p>中国（东莞）自由贸易试验区正定片区发展论坛</p>
+            <p>中国（大湾区）进出口食品商洽会暨首届东莞年货采购节</p>
           </li>
           <li>
             <span>会议时间： </span>
@@ -148,7 +148,7 @@
           </li>
           <li>
             <span>会议地点： </span>
-            <p>东莞国际会展中心宴会厅</p>
+            <p>东莞国际会议中心</p>
           </li>
         </ul>
       </div>
@@ -943,9 +943,6 @@ li {
   background-size:100% 100%;
   height: 481px;
   position: relative;
-}
-#myPCcontent2 img{
-  width: 100%;
 }
 .yunhall {
   width: 1200px;
