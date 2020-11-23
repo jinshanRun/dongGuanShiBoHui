@@ -89,7 +89,7 @@
       <div class="newcon">
         <p class="newsbck"><span>新闻中心</span><router-link :to="{name: 'news'}"><img src="../assets/img/more.png" alt=""></router-link></p>
         <ul style="position: relative;">
-          <div style="position: absolute;top: 10px;right: 192px;"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
+          <div style="position: absolute;top: 10px;right: 145px;" v-show="fireFlag"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
           <li v-for="(item) in article" :key="item.i" @click="wacthNewsxq(item)">
             <!-- <span>{{i}}</span> -->
             <!-- <span>{{item}}</span> -->
@@ -516,6 +516,7 @@ export default {
   },
   data() {
     return {
+      fireFlag:false,
       activeName: "first",
       loading: true,
       tabshowCon: 1,
@@ -558,11 +559,10 @@ export default {
     ArtileListLoad(){
       this.$http.get("/articleapi/pageList?page=0&size=6")
       .then(res => {
-         // eslint-disable-next-line no-console
-         console.log(res.data)
-         this.article = res.data.data.content
-        //  this.uuid= this.article.uuid
-         // eslint-disable-next-line no-console
+        if (res.data.returnCode == true && res.data.returnMsg == "OK") {
+          this.article = res.data.data.content;
+          this.fireFlag = true;
+        }
       })
       .catch( error =>{
         // eslint-disable-next-line no-console
