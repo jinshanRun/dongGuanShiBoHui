@@ -89,7 +89,7 @@
       <div class="newcon">
         <p class="newsbck"><span>新闻中心</span><router-link :to="{name: 'news'}"><img src="../assets/img/more.png" alt=""></router-link></p>
         <ul style="position: relative;">
-          <div style="position: absolute;top: 10px;right: 192px;"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
+          <div style="position: absolute;top: 10px;right: 145px;" :v-show="fireFlag"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
           <li v-for="(item) in article" :key="item.i" @click="wacthNewsxq(item)">
             <!-- <span>{{i}}</span> -->
             <!-- <span>{{item}}</span> -->
@@ -143,7 +143,7 @@
           <p class="todayp2">开幕式</p>
           <li>
             <span>会议名称： </span>
-            <p>中国（东莞）自由贸易试验区正定片区发展论坛</p>
+            <p>中国（大湾区）进出口食品商洽会暨首届东莞年货采购节</p>
           </li>
           <li>
             <span>会议时间： </span>
@@ -423,7 +423,7 @@
         </div> -->
         <div style=" text-align: justify;text-justify: inter-ideograph;">
           <a href="http://www.dg.gov.cn/jjdz/dzyw/content/post_3405330.html" target="_blank">
-           2021年东莞食博会将于2021年11月19-22日在国际会展中心举办。在中国国际贸易环境中贸易战和COVID-19疫情的双重挑战下，将以“加强食品文化交流，推进品质消费提档”为主题，聚焦食品产业经济发展与食品文化传承共进融合的生态建设。
+           2021年东莞食博会将于2021年1月28-2月3日在国际会展中心举办。在中国国际贸易环境中贸易战和COVID-19疫情的双重挑战下，将以“加强食品文化交流，推进品质消费提档”为主题，聚焦食品产业经济发展与食品文化传承共进融合的生态建设。
          </a>
         </div>
         <div style="text-align: justify;text-justify: inter-ideograph;">
@@ -496,7 +496,7 @@
       <div class="guestbutton2">
         <img src="../assets/img/guestright.png" alt="" />
       </div>
-    </div> 
+    </div>
     <div class="h40"></div>
     </div>
   </div>
@@ -527,6 +527,7 @@ export default {
       srcMouseenter4:require('@/assets/img/shiwenhua1.png'),
       srcMouseenter5:require('@/assets/img/yincai1.png'),
       srcMouseenter6:require('@/assets/img/haoshipin1.png'),
+      fireFlag:false,
     };
   },
   created() {},
@@ -553,11 +554,10 @@ export default {
     ArtileListLoad(){
       this.$http.get("/articleapi/pageList?page=0&size=6")
       .then(res => {
-         // eslint-disable-next-line no-console
-         console.log(res.data)
-         this.article = res.data.data.content
-        //  this.uuid= this.article.uuid
-         // eslint-disable-next-line no-console
+        if (res.data.returnCode == true && res.data.returnMsg == "OK") {
+          this.article = res.data.data.content;
+          this.fireFlag = true;
+        }
       })
       .catch( error =>{
         // eslint-disable-next-line no-console
@@ -1203,7 +1203,7 @@ li {
   color: #333333;
   overflow: hidden;
 }
-.unity a{ 
+.unity a{
   color: #333333;
 }
 .unity_left {

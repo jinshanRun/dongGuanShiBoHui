@@ -34,7 +34,7 @@
             <div class="item-img"><img :src="item.imgUrl" alt=""></div>
             <div style="float:left;margin-left:20px" class="itemcontentList">
             <p class="item-list-title">{{item.title}}</p>
-            <p class="item-list-time">{{item.createTime}} <span class="item-list-source"> 来源：{{item.source}}</span></p>
+            <p class="item-list-time">{{item.releaseTime}} <span class="item-list-source"> 来源：{{item.source}}</span></p>
             <p class="item-list-content">{{item.summary}}</p>
             </div>
             <div class="item-list-more">
@@ -109,7 +109,7 @@ export default {
       // console.log("jjjjjjjjjjjjdiiiiiiiiiiif"+val)
     },
   },
- 
+
   mounted() {
      this.loading = false;
     this.wacthNewsxqlistmore(this.page,this.size)
@@ -187,7 +187,7 @@ export default {
       }
 .news_left  {
   float: left;
-} 
+}
 .news_left p{
   font-size: 12px;
   color: #b6b6b6;

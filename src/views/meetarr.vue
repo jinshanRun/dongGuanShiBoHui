@@ -23,7 +23,7 @@
           <div class="meetarr-content-right">
               <p>开幕式暨峰会</p>
               <div class="meetarr-content-xq">
-              <img src="../assets/img/huifangVideo.png" alt="">
+<!--              <img src="../assets/img/huifangVideo.png" alt="">-->
               <div class="meetarr-content-xq-jieshao">
                 <p>会议介绍</p>
                 <div>开幕式暨峰会将充分融合互联网、人工智能、新媒体等技术手段，呈现智能时代下，人与未来的相遇、人与智能科技的完美融合，创造身临其境的视觉体验，致力打造“线上线下、虚实结合、智能体验、内外联动”的线上盛会。大会拟邀请智能化领域知名专家和企业家发表主旨演讲；邀请行业领军企业重磅发布智能产业新产品、新技术、新业态、新应用、新成果。交流产业发展前沿，分享行业最新成果，共同推动智能产业高质量发展，实现为经济赋能、为生活添彩。</div>

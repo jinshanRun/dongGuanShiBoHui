@@ -25,7 +25,7 @@
             <template slot="title">展商服务</template>
             <el-menu-item index="/exhibitionHall1">展厅类别</el-menu-item>
             <el-menu-item index="/exhibitionGuide2">展馆走向</el-menu-item>
-            <el-menu-item><a href="http://39.106.51.133:8091/shibohui/att2.pdf" target="_blank"> 招商手册</a></el-menu-item>
+            <el-menu-item><a href="http://39.106.51.133:8082/shibohui/att2.pdf" target="_blank"> 招商手册</a></el-menu-item>
             <el-menu-item index="/exhibitionForm4">参展申请</el-menu-item>
           </el-submenu>
           <el-submenu index="4">

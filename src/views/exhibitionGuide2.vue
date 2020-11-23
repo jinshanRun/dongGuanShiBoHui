@@ -13,7 +13,7 @@
           </div>
           <div class="expo-content-right">
               <p>展区分布及参馆路线</p>
-              <div><img src="../assets/img/guideback.png" alt=""></div>
+<!--              <div><img src="../assets/img/guideback.png" alt=""></div>-->
           </div>
       </div>
          <div class="h40"></div>
@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      url: "http://39.106.51.133:8091/shibohui/att2.pdf",
+      url: "http://39.106.51.133:8082/shibohui/att2.pdf",
       loading: true,
       newsList: [],
       newstype: 1

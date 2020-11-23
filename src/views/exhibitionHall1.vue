@@ -16,7 +16,7 @@
                <p style="font-size:18px;width:96px;float:left;height:338px;line-height:8px">线上展厅</p>
                <ul>
                  <li @click="company1('ff7632e456174ad4b52d6fc76968f35420201023172642')"><img src="../assets/img/xs01.png" alt=""></li>
-                 <li @click="company2('5f29577d3fd249d1b59d4b9cc2d8ba3920201023172717')"><img src="../assets/img/xs02.png" alt=""></li>
+<!--                 <li @click="company2('5f29577d3fd249d1b59d4b9cc2d8ba3920201023172717')"><img src="../assets/img/xs02.png" alt=""></li>-->
                  <li @click="company3('d51083c57a99405fa3e7a5066a556f9720201023172826')"><img src="../assets/img/xs03.png" alt=""></li>
                  <li @click="company4('ee51986b1c97468eb20f28a1fc17826f20201023172841')"><img src="../assets/img/xs04.png" alt=""></li>
                  <li @click="company5('2b944fcfa09e42d588dcb6b5ace83ea420201023172900')"><img src="../assets/img/xs05.png" alt=""></li>
@@ -45,14 +45,14 @@ export default {
   },
   data() {
     return {
-      url:"http://39.106.51.133:8091/shibohui/att2.pdf",
+      url:"http://39.106.51.133:8082/shibohui/att2.pdf",
       loading: true,
       newsList: [],
       newstype: 1
     };
   },
    mounted() {
-    
+
   },
   methods: {
     // 线上展厅
@@ -91,7 +91,7 @@ export default {
       this.$router.push({name:'yunSshen4',query:{uuid:uid}})
      }
   },
- 
+
 };
 </script>
 

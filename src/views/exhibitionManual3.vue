@@ -7,7 +7,7 @@
               <ul class="expo-content-list">
                  <li><router-link :to="{name:'exhibitionHall1'}">展厅类别</router-link></li>
                   <li><router-link :to="{name:'exhibitionGuide2'}">展馆走向</router-link></li>
-                  <li><a href="http://39.106.51.133:8091/shibohui/att2.pdf" target="_blank" style="width:184px;height:40px;display:block">招商手册</a></li>
+                  <li><a href="http://39.106.51.133:8082/shibohui/att2.pdf" target="_blank" style="width:184px;height:40px;display:block">招商手册</a></li>
                   <li><router-link :to="{name:'exhibitionForm4'}">参展申请</router-link></li>
               </ul>
           </div>

@@ -81,8 +81,8 @@ export default {
   },
   data() {
     return {
-      url: "http://39.106.51.133:8091/shibohui/att2.pdf",
-      downFileUrl:"http://39.106.51.133:8091/shibohui/参展申请表.doc",
+      url: "http://39.106.51.133:8082/shibohui/att2.pdf",
+      downFileUrl:"http://39.106.51.133:8082/shibohui/参展申请表.doc",
       newsList: [],
       newstype: 1,
       ruleForm: {
