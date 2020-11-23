@@ -164,9 +164,13 @@ body {
 .allheuo{
   width:100%;
   background: url("../assets/img/allheuoback.png") no-repeat no-repeat;
+  background-size:100% 100%;
   height: 512px;
   padding-top: 106px;
   position: relative;
+}
+.allheuo img{
+  max-width: 100%;
 }
 .zhanhezuo,.hezuo {
   width: 1200px;
