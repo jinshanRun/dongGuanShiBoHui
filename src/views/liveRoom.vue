@@ -22,8 +22,11 @@
                     <span class="liveRemind-title">{{item.title}}</span>
                     <span class="liveRemind-timetitle">开播时间 </span>
                     <span class="liveRemind-time">{{item.showTime}}</span>
-                    <a :href=item.url target="_blank" class="liveRemind-join" v-show="Date.parse(item.showTimeItem.replace(/-/g,'/')) < liveNowDate" >进入直播间</a>
-                    <a class="notLive" v-show="Date.parse(item.showTimeItem.replace(/-/g,'/')) > liveNowDate" >暂未开始</a>
+<!--                    <a :href=item.url target="_blank" class="liveRemind-join" v-show="Date.parse(item.showTimeItem.replace(/-/g,'/')) < liveNowDate" >进入直播间</a>-->
+<!--                    <a class="notLive" v-show="Date.parse(item.showTimeItem.replace(/-/g,'/')) > liveNowDate" >暂未开始</a>-->
+                    <a :href=item.url target="_blank" class="liveRemind-join" v-show="item.liveIng" >进入直播间</a>
+                    <a class="notLive" v-show="item.liveStart" >暂未开始</a>
+                    <a class="notLive" v-show="item.liveEnd" >直播已结束</a>
                   </div>
                 </li>
               </ul>

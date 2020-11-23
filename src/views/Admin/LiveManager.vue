@@ -7,8 +7,9 @@
         <br>
         <el-table :data="liveList">
             <el-table-column fixed prop="title" label="直播标题" width="300" />
-            <el-table-column fixed prop="showTimeItem" label="直播时间" width="180" />
-            <el-table-column fixed prop="url" label="直播链接" width="700" />
+            <el-table-column prop="showTimeItem" label="直播时间" width="180" />
+            <el-table-column prop="endshowTime" label="直播结束时间" width="180" />
+            <el-table-column prop="url" label="直播链接" width="700" />
             <el-table-column
                     label="操作"
                     width="100">
@@ -67,6 +68,12 @@
                     <el-form-item label="直播观看url链接地址" prop="url" style="width:90%">
                         <el-input type="textarea" autosize v-model="ruleForm.url"></el-input>
                     </el-form-item>
+                    <el-form-item label="是否结束直播" prop="endLive">
+                      <el-select v-model="ruleForm.endLive" style="width:30%">
+                        <el-option label="是" value="true">是</el-option>
+                        <el-option label="否" value="false">否</el-option>
+                      </el-select>
+                    </el-form-item>
                 </el-form>
                 <el-button style="margin-left: 10%" @click="updateLive()">更新</el-button>
             </el-drawer>
@@ -92,6 +99,7 @@
                     imageUuid:'',
                     showTime:'',
                     url:'',
+                    endLive:false,
                 },
                 imageFileList:[{
                     name:'',
@@ -171,7 +179,8 @@
                     title:this.ruleForm.title,
                     imageUuid:this.ruleForm.imageUuid,
                     showTime:this.ruleForm.showTimeItem,
-                    url:this.ruleForm.url
+                    url:this.ruleForm.url,
+                    endLive:this.ruleForm.endLive,
                 };
                 this.$http.put("/liveapi/updateLive/"+this.ruleForm.uuid, dto)
                     .then(response => {

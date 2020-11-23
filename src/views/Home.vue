@@ -89,7 +89,7 @@
       <div class="newcon">
         <p class="newsbck"><span>新闻中心</span><router-link :to="{name: 'news'}"><img src="../assets/img/more.png" alt=""></router-link></p>
         <ul style="position: relative;">
-          <div style="position: absolute;top: 10px;right: 145px;" :v-show="fireFlag"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
+          <div style="position: absolute;top: 10px;right: 145px;" v-show="fireFlag"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
           <li v-for="(item) in article" :key="item.i" @click="wacthNewsxq(item)">
             <!-- <span>{{i}}</span> -->
             <!-- <span>{{item}}</span> -->
