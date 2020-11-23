@@ -1,13 +1,13 @@
 <template>
   <div class="cases">
       <el-form  :rules="rules" :model="ruleForm"  ref="ruleForm" label-width="80px">
-        <el-form-item label="文章标题" prop="articleTitle" style="width:80%">
+        <el-form-item label="文章标题" prop="articleTitle" style="width:60%">
           <el-input v-model="ruleForm.articleTitle"></el-input>
         </el-form-item>
-         <el-form-item label="摘要" prop="summary" style="width:80%">
+         <el-form-item label="摘要" prop="summary" style="width:60%">
           <el-input type="textarea" v-model="ruleForm.summary" autosize></el-input>
         </el-form-item>
-        <el-form-item label="新闻封面" prop="imageUuid" style="width:50%">
+        <el-form-item label="新闻封面" prop="imageUuid" style="width:60%">
           <!-- <el-input v-model="ruleForm.imageUuid"></el-input> -->
           <el-upload
             class="upload-demo"
@@ -27,10 +27,10 @@
             <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
           </el-upload>
         </el-form-item>
-        <el-form-item label="发布人" prop="releaseUser" style="width:80%">
+        <el-form-item label="发布人" prop="releaseUser" style="width:60%">
           <el-input v-model="ruleForm.releaseUser"></el-input>
         </el-form-item>
-        <el-form-item prop="releaseTime" label="发布时间">
+        <el-form-item prop="releaseTime" label="发布时间" style="width:60%">
          <el-date-picker
          v-model="ruleForm.releaseTime"
           type="datetime"
@@ -40,10 +40,10 @@
           style="width: 50%;">
             </el-date-picker>
        </el-form-item>
-       <el-form-item label="来源" prop="source" style="width:80%">
+       <el-form-item label="来源" prop="source" style="width:60%">
         <el-input v-model="ruleForm.source"></el-input>
        </el-form-item>
-       <el-form-item label="正文信息" prop="content">
+       <el-form-item label="正文信息" prop="content" style="width:60%">
           <el-upload
                 class="avatar-uploader"
                 :action="serverUrl"
@@ -54,7 +54,7 @@
                 :on-error="uploadError"
                 :before-upload="beforeUpload">
         </el-upload>
-            <quill-editor v-model="ruleForm.content" style="width:80%"
+            <quill-editor v-model="ruleForm.content"
                   ref="contenta"
                   :options="editorOption"
                   @blur="handleEditorBlur($event)"
