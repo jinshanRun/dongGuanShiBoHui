@@ -89,7 +89,7 @@
       <div class="newcon">
         <p class="newsbck"><span>新闻中心</span><router-link :to="{name: 'news'}"><img src="../assets/img/more.png" alt=""></router-link></p>
         <ul style="position: relative;">
-          <div style="position: absolute;top: 10px;right: 145px;" v-show="fireFlag"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
+<!--          <div style="position: absolute;top: 10px;right: 145px;" v-show="fireFlag"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>-->
           <li v-for="(item) in article" :key="item.i" @click="wacthNewsxq(item)">
             <!-- <span>{{i}}</span> -->
             <!-- <span>{{item}}</span> -->
@@ -593,7 +593,6 @@ export default {
   },
 };
 </script>
-
 <style lang="scss">
 .el-carousel__item h3 {
   color: #475669;
@@ -615,6 +614,10 @@ export default {
         margin: 0;
         text-decoration: none;
     }
+ //img{
+ //  width: 100%;
+ //  height: 100%;
+ //}
     html,
     body {
         height: 100%;
@@ -937,8 +940,12 @@ li {
 // 云上展厅
 #myPCcontent2{
   background: url("../assets/img/yunhallback.png") no-repeat no-repeat;
+  background-size:100% 100%;
   height: 481px;
   position: relative;
+}
+#myPCcontent2 img{
+  width: 100%;
 }
 .yunhall {
   width: 1200px;
@@ -969,6 +976,7 @@ li {
 // 会议日程
 #myPCcontent3{
   background: url("../assets/img/myPCcontent3bck.png") no-repeat no-repeat;
+  background-size:100% 100%;
   height: 700px;
   padding-top: 86px;
 }
@@ -1198,6 +1206,7 @@ li {
 // 展商报名 媒体注册
 #myPCcontent4{
   background: url("../assets/img/myPC4back.png") no-repeat no-repeat;
+  background-size:100% 100%;
   height: 230px;
   padding-top: 70px;
 }
@@ -1239,8 +1248,12 @@ li {
   width:100%;
   height: 465px;
   background:url("../assets/img/unityback.png") no-repeat no-repeat;
+  background-size:100% 100%;
   position: relative;
   padding-top: 85px;
+}
+.uni img{
+  width: 100%;
 }
 .unity {
   padding: 33px 0;
@@ -1291,6 +1304,7 @@ li {
 // 特邀嘉宾
 #myPCcontent5{
   background:url("../assets/img/guesttopbcack.png") no-repeat no-repeat;
+  background-size:100% 100%;
   position: relative;
   height: 435px;
   padding-top: 85px;
