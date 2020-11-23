@@ -1,5 +1,5 @@
 <template>
-  <div class="home" v-loading="loading">
+  <div class="home" v-loading="loading" style="overflow: hidden">
     <div class="home-banner" v-loading="loading">
       <img src="../assets/img/home_top.png" alt="" />
       <div class="visitNumber">
@@ -33,8 +33,8 @@
       </div>
     </div>
 <!--    中间内容板块-->
-<!--    <div style="background: #f4eed0">-->
-    <div>
+
+    <div id="myPCcontent1">
     <!-- 六大块 -->
     <div class="contentbanner">
     <div class="contentlistCon">
@@ -89,7 +89,7 @@
       <div class="newcon">
         <p class="newsbck"><span>新闻中心</span><router-link :to="{name: 'news'}"><img src="../assets/img/more.png" alt=""></router-link></p>
         <ul style="position: relative;">
-          <div style="position: absolute;top: 10px;right: 145px;" v-show="fireFlag"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
+          <div style="position: absolute;top: 10px;right: 192px;"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>
           <li v-for="(item) in article" :key="item.i" @click="wacthNewsxq(item)">
             <!-- <span>{{i}}</span> -->
             <!-- <span>{{item}}</span> -->
@@ -105,10 +105,11 @@
         /></router-link>
       </div>
     </div>
+    </div>
     <!-- 云上展厅 -->
-    <div style="background:#f9f9f9;height:450px;padding-top:40px">
-      <div style="margin-bottom: 60px"> <img src="../assets/img/meetingtop.png"/> </div>
-    <div class="yunhall">
+    <div id="myPCcontent2">
+      <div style="position: absolute;left: 0;top:-52px"> <img src="../assets/img/meetingtopbck.png"/> </div>
+      <div class="yunhall">
       <ul>
         <li>
           <router-link :to="{name: 'yunshangVideo'}"><img src="../assets/img/hall1.png" alt="" /></router-link>
@@ -124,15 +125,11 @@
         </li>
       </ul>
     </div>
+      <div style="position: absolute;left: 0;bottom:-38px"> <img src="../assets/img/zhanhuitop.png"/> </div>
     </div>
-    <!-- <div class="h60"></div> -->
-    <!-- 广告位 -->
-    <!-- <div class="adver">
-      <img src="../assets/img/adverback.gif" alt="" />
-    </div> -->
-    <div class="h38"></div>
-    <!-- 会议日程 -->
-      <div style="margin-bottom: 60px"> <img src="../assets/img/zhanhuitop.png"/> </div>
+
+    <!-- 会议日程 and活动日程 -->
+   <div id="myPCcontent3">
     <div class="metting">
       <div style="float: left">
         <img src="../assets/img/mettingleftbck.png"/>
@@ -143,7 +140,7 @@
           <p class="todayp2">开幕式</p>
           <li>
             <span>会议名称： </span>
-            <p>中国（大湾区）进出口食品商洽会暨首届东莞年货采购节</p>
+            <p>中国（东莞）自由贸易试验区正定片区发展论坛</p>
           </li>
           <li>
             <span>会议时间： </span>
@@ -156,348 +153,356 @@
         </ul>
       </div>
     </div>
-    <div class="h40"></div>
-    <!-- 活动日程 -->
-    <div style="background:#f9f9f9;height:370px;padding-top:40px">
-    <div class="activityDate">
-      <div class="actmeet">
-        <div class="sce-tab" id="pcRicheng">
-          <!-- <span class="arr"><a class="prev"></a></span>
-          <span class="arrow"><a class="next"></a></span> -->
+     <div>
+       <div class="activityDate">
+         <div class="actmeet">
+           <div class="sce-tab" id="pcRicheng">
+             <!-- <span class="arr"><a class="prev"></a></span>
+             <span class="arrow"><a class="next"></a></span> -->
 
-          <el-tabs type="border-card" v-model="activeName" @tab-click="handleClick">
+             <el-tabs type="border-card" v-model="activeName" @tab-click="handleClick">
 
-          <el-tab-pane label="1月28日" name="first">
-            <div class="card-body">
-              <ul>
-                <li class="info-list-item">
-                  <div class="now-date">2021年1月28日</div>
-                  <router-link :to="{ name: 'meetarr' }"
-                    ><div class="now-title">
-                      参加中国食文化国际交流、中国食品科技成果展览、食品产业博览会人员陆续布展
-                    </div>
-                  </router-link>
-                  <div class="kms">
-                    <router-link :to="{ name: 'meetarr' }">
-                      <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                      </router-link>
-                  </div>
-                </li>
-              </ul>
-            </div></el-tab-pane>
-          <el-tab-pane label="1月29日" name="second">
-            <div class="card-body">
-              <ul>
-                <li class="info-list-item">
-                  <div class="now-date">2021年1月29日</div>
-                  <router-link :to="{ name: 'meetarr' }"
-                    ><div class="now-title">
-                      线上线下同步开展
-                    </div></router-link
-                  >
-                  <div class="kms">
-                    <router-link :to="{ name: 'meetarr' }" >
-                      <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                      </router-link
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div></el-tab-pane>
+               <el-tab-pane label="1月28日" name="first">
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年1月28日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         参加中国食文化国际交流、中国食品科技成果展览、食品产业博览会人员陆续布展
+                       </div>
+                       </router-link>
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }">
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link>
+                       </div>
+                     </li>
+                   </ul>
+                 </div></el-tab-pane>
+               <el-tab-pane label="1月29日" name="second">
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年1月29日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         线上线下同步开展
+                       </div></router-link
+                       >
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }" >
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div></el-tab-pane>
 
-            <el-tab-pane label="1月30日" name="third">
-                <div class="layui-card-header font-24">
-                  <span class="font-bold">上午</span>
-                  <span class="font-18 color-666"></span>
-                </div>
-                <div class="card-body">
-                  <ul>
-                    <li class="info-list-item">
-                      <div class="now-date">2021年1月30日</div>
-                      <router-link :to="{ name: 'meetarr' }"
-                        ><div class="now-title">
-                          中国食文化国际交流博览会开幕、“中华传统好食品”颁奖典礼
-                        </div></router-link
-                      >
-                      <div class="kms">
-                        <router-link :to="{ name: 'meetarr' }" >
-                          <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                          </router-link
-                        >
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="layui-card-header font-24">
-                  <span class="font-bold">下午</span>
-                  <span class="font-18 color-666"></span>
-                </div>
-                <div class="card-body">
-                  <ul>
-                    <li class="info-list-item">
-                      <div class="now-date">2021年1月30日</div>
-                      <router-link :to="{ name: 'meetarr' }"
-                        ><div class="now-title">
-                          举行食品经济发展国际高峰论坛及投融资对接会
-                        </div></router-link
-                      >
-                      <div class="kms">
-                        <router-link :to="{ name: 'meetarr' }">
-                          <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                          </router-link
-                        >
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-            </el-tab-pane>
-            <el-tab-pane label="2月1日" name="fourth">
-                <div class="layui-card-header font-24">
-                  <span class="font-bold">上午</span>
-                  <span class="font-18 color-666"></span>
-                </div>
-                <div class="card-body">
-                  <ul>
-                    <li class="info-list-item">
-                      <div class="now-date">2021年2月1日</div>
-                      <router-link :to="{ name: 'meetarr' }"
-                        ><div class="now-title">
-                          开展中外食品科技产业发展对话活动
-                        </div></router-link
-                      >
-                      <div class="kms">
-                        <router-link :to="{ name: 'meetarr' }" >
-                          <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                          </router-link
-                        >
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="layui-card-header font-24">
-                  <span class="font-bold">下午</span>
-                  <span class="font-18 color-666"></span>
-                </div>
-                <div class="card-body">
-                  <ul>
-                    <li class="info-list-item">
-                      <div class="now-date">2021年2月1日</div>
-                      <router-link :to="{ name: 'meetarr' }"
-                        ><div class="now-title">
-                          举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会
-                        </div></router-link
-                      >
-                      <div class="kms">
-                        <router-link :to="{ name: 'meetarr' }">
-                          <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                          </router-link
-                        >
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-            </el-tab-pane>
-            <el-tab-pane label="2月2日" name="five">
-              <div class="layui-card-header font-24">
-                <span class="font-bold">上午</span>
-                <span class="font-18 color-666"></span>
-              </div>
-              <div class="card-body">
-                <ul>
-                  <li class="info-list-item">
-                    <div class="now-date">2021年2月2日</div>
-                    <router-link :to="{ name: 'meetarr' }"
-                    ><div class="now-title">
-                      开展中外食品科技产业发展对话活动
-                    </div></router-link
-                    >
-                    <div class="kms">
-                      <router-link :to="{ name: 'meetarr' }" >
-                        <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                      </router-link
-                      >
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="layui-card-header font-24">
-                <span class="font-bold">下午</span>
-                <span class="font-18 color-666"></span>
-              </div>
-              <div class="card-body">
-                <ul>
-                  <li class="info-list-item">
-                    <div class="now-date">2021年2月2日</div>
-                    <router-link :to="{ name: 'meetarr' }"
-                    ><div class="now-title">
-                      举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会
-                    </div></router-link
-                    >
-                    <div class="kms">
-                      <router-link :to="{ name: 'meetarr' }">
-                        <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                      </router-link
-                      >
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </el-tab-pane>
-            <!-- 2021年2月3日 -->
-            <el-tab-pane label="2月3日" name="six">
-            <div class="card-body">
-              <ul>
-                <li class="info-list-item">
-                  <div class="now-date">2021年2月3日</div>
-                  <router-link :to="{ name: 'meetarr' }"
-                    ><div class="now-title">
-                       线下展会结束
-                    </div></router-link
-                  >
-                  <div class="kms">
-                    <router-link :to="{ name: 'meetarr' }" >
-                      <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                      </router-link
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-             <div class="card-body">
-              <ul>
-                <li class="info-list-item">
-                  <div class="now-date">2021年2月3日</div>
-                  <router-link :to="{ name: 'meetarr' }"
-                    ><div class="now-title">
-                       线上展会结束
-                    </div></router-link>
-                  <div class="kms">
-                    <router-link :to="{ name: 'meetarr' }" >
-                      <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                      </router-link
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-            </el-tab-pane>
-          </el-tabs>
+               <el-tab-pane label="1月30日" name="third">
+                 <div class="layui-card-header font-24">
+                   <span class="font-bold">上午</span>
+                   <span class="font-18 color-666"></span>
+                 </div>
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年1月30日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         中国食文化国际交流博览会开幕、“中华传统好食品”颁奖典礼
+                       </div></router-link
+                       >
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }" >
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="layui-card-header font-24">
+                   <span class="font-bold">下午</span>
+                   <span class="font-18 color-666"></span>
+                 </div>
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年1月30日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         举行食品经济发展国际高峰论坛及投融资对接会
+                       </div></router-link
+                       >
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }">
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+               </el-tab-pane>
+               <el-tab-pane label="2月1日" name="fourth">
+                 <div class="layui-card-header font-24">
+                   <span class="font-bold">上午</span>
+                   <span class="font-18 color-666"></span>
+                 </div>
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年2月1日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         开展中外食品科技产业发展对话活动
+                       </div></router-link
+                       >
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }" >
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="layui-card-header font-24">
+                   <span class="font-bold">下午</span>
+                   <span class="font-18 color-666"></span>
+                 </div>
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年2月1日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会
+                       </div></router-link
+                       >
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }">
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+               </el-tab-pane>
+               <el-tab-pane label="2月2日" name="five">
+                 <div class="layui-card-header font-24">
+                   <span class="font-bold">上午</span>
+                   <span class="font-18 color-666"></span>
+                 </div>
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年2月2日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         开展中外食品科技产业发展对话活动
+                       </div></router-link
+                       >
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }" >
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="layui-card-header font-24">
+                   <span class="font-bold">下午</span>
+                   <span class="font-18 color-666"></span>
+                 </div>
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年2月2日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会
+                       </div></router-link
+                       >
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }">
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+               </el-tab-pane>
+               <!-- 2021年2月3日 -->
+               <el-tab-pane label="2月3日" name="six">
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年2月3日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         线下展会结束
+                       </div></router-link
+                       >
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }" >
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="card-body">
+                   <ul>
+                     <li class="info-list-item">
+                       <div class="now-date">2021年2月3日</div>
+                       <router-link :to="{ name: 'meetarr' }"
+                       ><div class="now-title">
+                         线上展会结束
+                       </div></router-link>
+                       <div class="kms">
+                         <router-link :to="{ name: 'meetarr' }" >
+                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
+                         </router-link
+                         >
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+               </el-tab-pane>
+             </el-tabs>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+    <!-- 展商报名 媒体注册 -->
+    <div id="myPCcontent4">
+      <div class="apply">
+        <div>
+          <router-link :to="{ name: 'baoming' }">
+            <img src="../assets/img/apply1.png" alt="" />
+          </router-link>
+        </div>
+        <div>
+          <router-link :to="{ name: 'register' }" >
+            <img src="../assets/img/apply2.png" alt=""/></router-link>
+        </div>
+        <div>
+          <router-link :to="{ name: 'userApply' }">
+            <img src="../assets/img/apply3.png" alt=""/></router-link>
+        </div>
+        <div>
+          <router-link :to="{ name: 'coopApply' }"
+          ><img src="../assets/img/apply4.png" alt=""
+          /></router-link>
         </div>
       </div>
     </div>
-    </div>
-    <div class="h40"></div>
-    <!-- 展商报名 媒体注册 -->
-    <div class="apply">
-      <div>
-        <router-link :to="{ name: 'baoming' }">
-          <img src="../assets/img/apply1.png" alt="" />
-          </router-link>
-      </div>
-      <div>
-        <router-link :to="{ name: 'register' }" >
-          <img src="../assets/img/apply2.png" alt=""/></router-link>
-      </div>
-       <div>
-        <router-link :to="{ name: 'userApply' }">
-          <img src="../assets/img/apply3.png" alt=""/></router-link>
-      </div>
-       <div>
-        <router-link :to="{ name: 'coopApply' }"
-          ><img src="../assets/img/apply4.png" alt=""
-        /></router-link>
-      </div>
-    </div>
-    <div class="h38"></div>
+
     <!-- 抗击疫情 -->
     <div class="uni">
+      <div style="position: absolute;left: 0;top:-52px;z-index: 666"> <img src="../assets/img/unitytopback.png"/> </div>
     <div class="unity">
-       <p class="meetp">抗击疫情</p>
       <div class="unity_left">
         <a href="http://www.dg.gov.cn/jjdz/dzyw/content/post_3405330.html"  target="_blank"><img src="../assets/img/unity_leftback.png" alt="" /></a>
       </div>
       <div class="unity_right">
-        <p><a href="http://www.dg.gov.cn/jjdz/dzyw/content/post_3405330.html" target="_blank">2021年东莞食博会组委会制定疫情防控工作方案和应急...</a></p>
-        <!-- <div class="fabutime">
-          <span>发布时间： 2020-10-15 11:55:00</span><span>来源：搜狐</span>
-        </div> -->
+        <p><a href="http://www.dg.gov.cn/jjdz/dzyw/content/post_3405330.html" target="_blank">东莞：形成常态化疫情防控强大合力</a></p>
+        <div class="fabutime">
+          <span>发布时间：2020-11-18 14:18:20</span><span>来源：东莞时间网</span>
+        </div>
         <div style=" text-align: justify;text-justify: inter-ideograph;">
           <a href="http://www.dg.gov.cn/jjdz/dzyw/content/post_3405330.html" target="_blank">
-           2021年东莞食博会将于2021年1月28-2月3日在国际会展中心举办。在中国国际贸易环境中贸易战和COVID-19疫情的双重挑战下，将以“加强食品文化交流，推进品质消费提档”为主题，聚焦食品产业经济发展与食品文化传承共进融合的生态建设。
-         </a>
+            11月17日，市委常委会会议暨市新冠肺炎疫情防控领导小组（指挥部）会议召开，深入学习贯彻习近平总书记重要讲话精神，传达中央、省近期关于新冠肺炎疫情防控工作的会议和文件精神，通报我市近期疫情防控工作情况，研究部署下一步工作。会议还传达学习习近平总书记对新时代民营经济统战工作作出的重要指示精神及全国民营经济统战工作会议精神。市委书记、市人大常委会主任梁维东主持会议。         </a>
         </div>
         <div style="text-align: justify;text-justify: inter-ideograph;">
           <a href="http://www.dg.gov.cn/jjdz/dzyw/content/post_3405330.html" target="_blank">
-         为确保展会顺利开展，组委会制定了疫情防控工作方案和应急预案，成立“食博会疫情防控小组”， 充分联动属地政府防控机制，严格履行防控职责，确保全员参与、全面覆盖，全方位、全过程、全领域防控，做到不留死角，力争打造一场专业、高效、安全的东莞食博会。
+<!--         为确保展会顺利开展，组委会制定了疫情防控工作方案和应急预案，成立“食博会疫情防控小组”， 充分联动属地政府防控机制，严格履行防控职责，确保全员参与、全面覆盖，全方位、全过程、全领域防控，做到不留死角，力争打造一场专业、高效、安全的东莞食博会。-->
          </a>
         </div>
       </div>
     </div>
+      <div style="position: absolute;left: 0;bottom:-34px;z-index: 666"> <img src="../assets/img/guesttopback.png"> </div>
     </div>
-    <div class="h38"></div>
     <!-- 特邀嘉宾 -->
+    <div id="myPCcontent5">
     <div class="guest">
-      <p class="meetp">特邀嘉宾</p>
-      <div class="guestbutton1">
-        <img src="../assets/img/guestleft.png" alt="" />
+     <div>
+          <div class="guestbutton1">
+            <img src="../assets/img/guestleft.png" alt="" />
+          </div>
+          <ul>
+            <li>
+              <router-link :to="{ name: 'guestxq' }">
+                <img src="../assets/img/guest1.png" alt="" />
+                <div class="guest_insbck"></div>
+                <div class="guest_ins">
+                  <p>| 马云</p>
+                  <p>阿里巴巴集团创始人、亚洲首富</p>
+                </div>
+              </router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'guestxq2' }">
+              <img src="../assets/img/guest2.png" alt="" />
+              <div class="guest_insbck"></div>
+              <div class="guest_ins">
+                <p>| 王健林</p>
+                <p>万达集团创办人兼董事长</p>
+              </div>
+              </router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'guestxq3' }">
+              <img src="../assets/img/guest3.png" alt="" />
+              <div class="guest_insbck"></div>
+              <div class="guest_ins">
+                <p>| 任正非</p>
+                <p>华为技术有限公司主要创始人兼总裁</p>
+              </div>
+              </router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'guestxq4' }">
+              <img src="../assets/img/guest4.png" alt="" />
+              <div class="guest_insbck"></div>
+              <div class="guest_ins">
+                <p>| 刘强东</p>
+                <p>京东集团董事局主席兼首席执行官</p>
+              </div>
+              </router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'guestxq5' }">
+              <img src="../assets/img/guest5.png" alt="" />
+              <div class="guest_insbck"></div>
+              <div class="guest_ins">
+                <p>| 雷军</p>
+                <p>小米科技创始人/董事长</p>
+              </div>
+              </router-link>
+            </li>
+          </ul>
+          <div class="guestbutton2">
+            <img src="../assets/img/guestright.png" alt="" />
+          </div>
       </div>
-      <ul>
-        <li>
-          <router-link :to="{ name: 'guestxq' }">
-            <img src="../assets/img/guest1.png" alt="" />
-            <div class="guest_insbck"></div>
-            <div class="guest_ins">
-              <p>| 马云</p>
-              <p>阿里巴巴集团创始人、亚洲首富</p>
-            </div>
-          </router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'guestxq2' }">
-          <img src="../assets/img/guest2.png" alt="" />
-          <div class="guest_insbck"></div>
-          <div class="guest_ins">
-            <p>| 王健林</p>
-            <p>万达集团创办人兼董事长</p>
-          </div>
-          </router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'guestxq3' }">
-          <img src="../assets/img/guest3.png" alt="" />
-          <div class="guest_insbck"></div>
-          <div class="guest_ins">
-            <p>| 任正非</p>
-            <p>华为技术有限公司主要创始人兼总裁</p>
-          </div>
-          </router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'guestxq4' }">
-          <img src="../assets/img/guest4.png" alt="" />
-          <div class="guest_insbck"></div>
-          <div class="guest_ins">
-            <p>| 刘强东</p>
-            <p>京东集团董事局主席兼首席执行官</p>
-          </div>
-          </router-link>
-        </li>
-        <li>
-          <router-link :to="{ name: 'guestxq5' }">
-          <img src="../assets/img/guest5.png" alt="" />
-          <div class="guest_insbck"></div>
-          <div class="guest_ins">
-            <p>| 雷军</p>
-            <p>小米科技创始人/董事长</p>
-          </div>
-          </router-link>
-        </li>
-      </ul>
-      <div class="guestbutton2">
-        <img src="../assets/img/guestright.png" alt="" />
-      </div>
+<!--      <div>-->
+<!--        <el-carousel :interval="5000" type="card" arrow="always">-->
+<!--          <el-carousel-item v-for="item in 10" :key="item">-->
+<!--            <h3>{{ item }}</h3>-->
+<!--          </el-carousel-item>-->
+<!--        </el-carousel>-->
+<!--      </div>-->
     </div>
-    <div class="h40"></div>
     </div>
   </div>
 </template>
@@ -527,7 +532,6 @@ export default {
       srcMouseenter4:require('@/assets/img/shiwenhua1.png'),
       srcMouseenter5:require('@/assets/img/yincai1.png'),
       srcMouseenter6:require('@/assets/img/haoshipin1.png'),
-      fireFlag:false,
     };
   },
   created() {},
@@ -554,10 +558,11 @@ export default {
     ArtileListLoad(){
       this.$http.get("/articleapi/pageList?page=0&size=6")
       .then(res => {
-        if (res.data.returnCode == true && res.data.returnMsg == "OK") {
-          this.article = res.data.data.content;
-          this.fireFlag = true;
-        }
+         // eslint-disable-next-line no-console
+         console.log(res.data)
+         this.article = res.data.data.content
+        //  this.uuid= this.article.uuid
+         // eslint-disable-next-line no-console
       })
       .catch( error =>{
         // eslint-disable-next-line no-console
@@ -590,6 +595,21 @@ export default {
 </script>
 
 <style lang="scss">
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 18px;
+  opacity: 0.75;
+  line-height: 300px;
+  margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+  background-color: #d3dce6;
+}
  * {
         padding: 0;
         margin: 0;
@@ -616,16 +636,13 @@ li {
 .el-main {
   overflow: hidden;
 }
-#swiperBox {
-  height: 560px;
-}
 .home-banner {
-  width: 100%;
-  height: 100%;
+  //width: 100%;
+  //height: 100%;
 }
 .home-banner img {
-  width: 100%;
-  height: 100%;
+  //width: 100%;
+  //height: 100%;
 }
 .visitNumber{
   width: 1200px;
@@ -636,13 +653,17 @@ li {
 }
  .visitNumber ul li{
    float: left;
-   width: 240px;
+   width: 238px;
    text-align: center;
+   border-right: 1px solid #ca0522;
  }
 .visitNumber ul li p{
   font-size: 36px;
   color: #f8c05d;
   margin-bottom: 28px;
+}
+.visitNumber ul li:first-child{
+  border-left: 1px solid #ca0522;
 }
 .visitNumber ul li div{
   font-size: 18px;
@@ -679,10 +700,15 @@ li {
     padding: 30px 0;
   }
 }
+#myPCcontent1{
+  background: url("../assets/img/sixAndnews.png") no-repeat no-repeat center;
+  margin-top: 20px;
+  height: 774px;
+}
 //板块二列表
 .contentbanner{
   width: 100%;
-  background: #f4eed0;
+  height: 290px;
 
 }
 .contentlistCon{
@@ -692,7 +718,6 @@ li {
 }
 .contentlist {
   width: 1200px;
-  height: 240px !important;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -700,7 +725,6 @@ li {
 .contentlist  li a {
   float: left;
   width: 200px;
-  height: 130px;
   line-height: 130px;
   text-align: center;
   display: inline-block;
@@ -709,15 +733,15 @@ li {
   position: relative;
   width: 200px;
   float: left;
-  margin-top: 30px;
+  margin-top: 67px;
   text-align: center;
   // border: 1px solid red;
-  padding: 36px 0;
+  padding: 25px 0;
 }
 .contentlist li span{
    display: inline-block;
    font-size: 18px;
-   color: #333333;
+   color: #ff9f15;
    width: 187px;
    height: 30px;
    line-height: 30px;
@@ -828,7 +852,7 @@ li {
 }
 .newsbck {
   width: 590px;
-  border-bottom: 1px solid #ffcc6b;
+
 }
 .newsbck span {
   display: inline-block;
@@ -848,17 +872,15 @@ li {
   display: inline-block;
   width: 5px;
   height: 5px;
-  background: #ff2022;
+  background: #666666;
   vertical-align: auto;
   margin-right: 10px;
   margin-bottom: 3px;
 }
-.newcon ul li:hover .dot{
-   background: #ff2022;
-}
 .newcon  .newscontitle{
   // width: 440px;
   display: inline-block;
+  color:#56220f;
 }
 .newcon ul li {
   font-size: 14px;
@@ -870,17 +892,19 @@ li {
   overflow: hidden;
   margin-left: 8px;
 }
-.newcon ul li:hover{
+.newcon ul li:hover .newscontitle{
  //transform: scale(1.02);
  //border: 1px solid #f6f7fa;
  //box-shadow: 4px 3px 9px rgba(21, 43, 127, 0.2)!important;
  //font-weight: 600;
- color: #ff2022;
- cursor: pointer;
+  color: #56220f;
+  cursor: pointer;
   font-size: 16px;
+  text-decoration:underline;
 }
 .newcon ul li .time {
   float: right;
+  color:#666666;
 }
 .sevenzhan {
   float: right;
@@ -911,10 +935,17 @@ li {
   height: 25px;
 }
 // 云上展厅
+#myPCcontent2{
+  background: url("../assets/img/yunhallback.png") no-repeat no-repeat;
+  height: 481px;
+  position: relative;
+}
 .yunhall {
   width: 1200px;
   height: 260px;
   margin: 0 auto;
+  overflow: hidden;
+  padding-top: 86px;
 }
 .yunhall ul li {
   float: left;
@@ -936,15 +967,22 @@ li {
   margin: 0 auto;
 }
 // 会议日程
+#myPCcontent3{
+  background: url("../assets/img/myPCcontent3bck.png") no-repeat no-repeat;
+  height: 700px;
+  padding-top: 86px;
+}
 .metting {
   width: 1200px;
-  height: 440px;
+  height: 438px;
   margin: 0 auto;
+}
+.metting div:first-child:hover{
+  transform: scale(1.02);
 }
 .Todaynewsbck{
   width: 490px;
-  border-bottom: 1px solid #e5e5e5;
-  color: #ff9f15;
+  color: #56220f;
 }
  .Todaynewsbck span {
    display: inline-block;
@@ -967,7 +1005,7 @@ li {
 .todayActivity {
   float: right;
   width: 490px;
-  color: #ff9f15;
+  color: #56220f;
 }
 .todayActivity ul {
   padding-left: 15px;
@@ -985,7 +1023,7 @@ li {
 }
 .todayActivity ul li span {
   font-size: 16px;
-  color: #ff9f15;
+  color: #56220f;
   font-weight: 700;
 }
 .todayActivity ul li {
@@ -1000,7 +1038,6 @@ li {
 // 活动日程
 .activityDate {
   width: 1200px;
-  height: 280px;
   margin: 0 auto;
 }
 .actmeet {
@@ -1060,7 +1097,7 @@ li {
   background: none;
 }
  #pcRicheng  .el-tabs--border-card>.el-tabs__content{
-  height: 260px;
+  //height: 260px;
 }
  #pcRicheng  .el-tabs--border-card{
    background: none;
@@ -1090,8 +1127,10 @@ li {
   padding: 10px 0px;
   line-height: 24px;
 }
+#pcRicheng .el-tabs--border-card>.el-tabs__header{
+  background: none!important;
+}
  #pcRicheng .el-tabs__nav-scroll{
-  //background: #0072fc!important;
   color: #ff0027!important;
 }
  #pcRicheng .el-tabs--border-card>.el-tabs__header{
@@ -1157,6 +1196,11 @@ li {
   vertical-align: bottom;
 }
 // 展商报名 媒体注册
+#myPCcontent4{
+  background: url("../assets/img/myPC4back.png") no-repeat no-repeat;
+  height: 230px;
+  padding-top: 70px;
+}
 .apply {
   width: 1200px;
   margin: 0 auto;
@@ -1193,8 +1237,10 @@ li {
 // 抗击疫情
 .uni{
   width:100%;
-  height: 464px;
-  background-color: #f9f9f9;
+  height: 465px;
+  background:url("../assets/img/unityback.png") no-repeat no-repeat;
+  position: relative;
+  padding-top: 85px;
 }
 .unity {
   padding: 33px 0;
@@ -1202,9 +1248,10 @@ li {
   margin: 0 auto;
   color: #333333;
   overflow: hidden;
+
 }
 .unity a{
-  color: #333333;
+  color: #56220f;
 }
 .unity_left {
   float: left;
@@ -1219,31 +1266,37 @@ li {
 .unity_right p a{
   width: 100%;
   display: inline-block;
-  color: #333333;
-  font-size: 19px;
+  color: #56220f;
+  font-size: 20px;
   font-weight: 700;
-  height: 60px;
-  line-height: 40px;
+  height: 40px;
+  line-height: 60px;
   text-align: center;
 }
 .fabutime {
-  font-size: 16px;
-  color: #9b9791;
+  font-size: 14px!important;
+  color: #56220f;
   font-weight: 550;
-  height: 38px;
-  line-height: 90px;
+  height: 75px;
+  line-height: 75px!important;
 }
 .fabutime span:nth-child(2) {
   float: right;
 }
 .unity_right div{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
 }
 
 // 特邀嘉宾
+#myPCcontent5{
+  background:url("../assets/img/guesttopbcack.png") no-repeat no-repeat;
+  position: relative;
+  height: 435px;
+  padding-top: 85px;
+}
 .guest {
-  width: 1280px;
+  width: 1370px;
   margin: 0 auto;
   color: #333333;
   overflow: hidden;
@@ -1260,16 +1313,26 @@ li {
   top: 46%;
 }
 .guest ul {
-  width: 1200px;
+  width: 1230px;
   margin: 0 auto;
 }
 .guest ul li {
+  width: 212px;
+  height: 300px;
   float: left;
-  margin-left: 25px;
+  margin-left: 28px;
   position: relative;
+  border:4px solid #d07d3f;
+  border-radius: 4px;
+}
+.guest ul li:first-child{
+  margin-left: 9px;
+}
+.guest ul li img{
+  width: 212px;
 }
 .guest ul li:nth-child(1) {
-  margin-left: 0px;
+  //margin-left: 0px;
 }
 .guest ul li:hover {
    transform: scale(1.03)
@@ -1277,19 +1340,19 @@ li {
 .guest_insbck {
   position: absolute;
   left: 0px;
-  bottom: 4px;
-  width: 220px;
+  bottom: 0px;
+  width: 212px;
   height: 52px;
-  background: #000;
-  opacity: 0.4;
+  background: #d07d3f;
+  opacity: 0.86;
 }
 .guest_ins {
   position: absolute;
-  left: 5px;
+  left: 3px;
   bottom: 0px;
-  width: 220px;
+  width: 212px;
   height: 50px;
-  color: #fff;
+  color: #fff6d7;
 }
 .guest_ins p:nth-child(1) {
   font-size: 14px;

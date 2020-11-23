@@ -8,7 +8,7 @@
 <script>
 import * as THREE from "three";
 export default {
-name: "Vr",
+  name: "Vr",
   data() {
     return{
       camera:new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000),	// 创建一个摄像机,
