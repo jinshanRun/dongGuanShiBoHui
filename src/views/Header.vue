@@ -90,6 +90,7 @@ export default {
        width: 100%;
        height: 60px;
        position: relative;
+       background: url("../assets/img/headerback.png") no-repeat no-repeat;
 
    }
     .el-header {

@@ -9,7 +9,7 @@
 import * as THREE from "three";
 import  image from "@/assets/vrimg/trayshi_pano_b.jpg"
 export default {
-name: "Vr",
+  name: "Vr",
   data() {
   return{
     camera:null,

@@ -2,17 +2,41 @@
      <div class="footer">
           <!-- 战略合作伙伴 -->
     <div class="allheuo">
+      <div style="position: absolute;left: 0;top:-28px;z-index: 666!important;"> <img src="../assets/img/guestbottomback.png"> </div>
       <div class="zhanhezuo">
-        <p class="meetp">战略合作伙伴</p>
-        <div class="h20"></div>
-        <div><img src="../../static/img/hezuoback2.png" alt="" /></div>
+        <ul>
+          <li>
+            <img src="../assets/img/Zheback1.png"/>
+          </li>
+          <li>
+            <img src="../assets/img/Zheback2.png"/>
+          </li>
+          <li>
+            <img src="../assets/img/Zheback3.png"/>
+          </li>
+          <li>
+            <img src="../assets/img/Zheback4.png"/>
+          </li>
+        </ul>
       </div>
-      <div class="h40"></div>
       <!-- 合作伙伴 -->
       <div class="hezuo">
-        <p class="meetp">合作伙伴</p>
-        <div class="h20"></div>
-        <div><img src="../../static/img/hezuoback.png" alt="" /></div>
+        <div class="zhanhezuo">
+          <ul>
+            <li>
+              <img src="../assets/img/Heback1.png"/>
+            </li>
+            <li>
+              <img src="../assets/img/Heback2.png"/>
+            </li>
+            <li>
+              <img src="../assets/img/Heback3.png"/>
+            </li>
+            <li>
+              <img src="../assets/img/Heback1.png"/>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
         <div class="footer-content">
@@ -110,12 +134,12 @@ body {
         align-items: flex-start;
         p {
           font-size: 16px;
-          color: #f7f7f7 !important;
+          color: #ff7200 !important;
           font-weight: 600;
           padding: 10px 0;
         }
         span {
-          color: #f7f7f7;
+          color: #ff7200;
           padding: 5px 0;
           font-size: 14px;
         }
@@ -139,8 +163,10 @@ body {
 // 战略合作伙伴
 .allheuo{
   width:100%;
-  background-color: #f9f9f9;
-  padding: 40px 0;
+  background: url("../assets/img/allheuoback.png") no-repeat no-repeat;
+  height: 512px;
+  padding-top: 106px;
+  position: relative;
 }
 .zhanhezuo,.hezuo {
   width: 1200px;
@@ -150,18 +176,29 @@ body {
   width: 1200px;
   height: 84px;
 }
-.meetp{
-  text-align: center;
-  font-size: 26px;
-  font-weight: 600;
-  height: 55px;
-  line-height: 40px;
+.zhanhezuo{
+  height: 334px;
 }
-
+.zhanhezuo ul li{
+  width: 270px;
+  height: 100px;
+  float: left;
+  text-align: center;
+  margin-left: 40px;
+  background: url("../assets/img/hezuoback.png") no-repeat no-repeat;
+}
+.zhanhezuo ul li:first-child{
+  margin-left: 0;
+}
+.zhanhezuo ul li img{
+  width: 230px;
+  height: 80px;
+  margin: 8px 0;
+}
 // 备案号
 .beian{
   width: 100%;
-  border-top: 1px dotted #498bef;
+  border-top: 1px dotted #ff4365;
   overflow: hidden;
 }
 .beian div{
@@ -169,7 +206,7 @@ body {
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  color: #dddddd;
+  color: #ff4567;
   font-size: 10px;
 }
 .beian div span{
