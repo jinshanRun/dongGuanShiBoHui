@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      url: "http://39.106.51.133:8082/shibohui/att2.pdf",
+      url: "http://39.106.51.133:8082/dongguan/att2.pdf",
       loading: true,
       newsList: [],
       newstype: 1
