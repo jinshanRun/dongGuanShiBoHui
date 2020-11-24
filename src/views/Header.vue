@@ -1,6 +1,6 @@
 <template>
 <div id="myheadstyle">
-     <el-header >
+     <el-header>
         <el-menu
           :default-active="defaultActive"
           class="el-menu-demo"
@@ -103,7 +103,7 @@ export default {
         margin: 0 auto;
         position: absolute;
         left: 18%;
-        top: 1%;
+        top: 0;
         z-index: 999;
         //background-color: #fff;
 
@@ -158,7 +158,7 @@ export default {
       color: #ffffff!important;
     }
     .el-menu-item:hover {
-        background-color: rgb(231,118,0) !important;
+        background-color: rgba(252,166,64,0.8) !important;  //下拉框移上去变颜色
         color: #fff!important;
     }
     .el-submenu:hover{
@@ -175,11 +175,11 @@ export default {
         color: #fff;
     }
     .el-submenu__title:hover .el-menu .el-menu--popup .el-menu--popup-bottom-start {
-        background-color: rgb(231,118,0) !important;
+        background-color: rgba(252,166,64,0.8) !important;
         margin-top: 10px !important;
     }
     .el-submenu__title:hover .el-menu .el-menu--popup .el-menu--popup-bottom-start .el-menu-item {
-        background-color: rgb(231,118,0) !important;
+        background-color: rgba(252,166,64,0.8) !important;
         margin-top: 10px !important;
     }
     .nohover:hover{
