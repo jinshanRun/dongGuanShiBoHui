@@ -509,7 +509,7 @@
   </div>
 </template>
 <script>
-import animate from "animate.css"
+// import animate from "animate.css"
 export default {
   name: "HelloWorld",
   components: {
@@ -645,10 +645,6 @@ export default {
         margin: 0;
         text-decoration: none;
     }
- //img{
- //  width: 100%;
- //  height: 100%;
- //}
     html,
     body {
         height: 100%;
@@ -662,8 +658,7 @@ export default {
         color: #2c3e50;
     }
 
-ul,
-li {
+ul, li {
   list-style: none;
   text-decoration: none;
 }
@@ -894,7 +889,7 @@ li {
 }
 .newsbck span {
   display: inline-block;
-  background: url(../assets/img/denglong.png) no-repeat no-repeat left;
+  background: url("../assets/img/denglong.png") no-repeat no-repeat left;
   width: 130px;
   height: 50px;
   font-size: 18px;
@@ -1031,7 +1026,7 @@ li {
 }
  .Todaynewsbck span {
    display: inline-block;
-   background: url(../assets/img/denglong.png) no-repeat no-repeat left;
+   background: url("../assets/img/denglong.png") no-repeat no-repeat left;
    width: 130px;
    height: 50px;
    font-size: 18px;
@@ -1077,7 +1072,7 @@ li {
 .todayActivity ul li p {
   font-size: 20px;
   line-height: 40px;
-  font-weight: 1000;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 // 活动日程
@@ -1108,7 +1103,7 @@ li {
   width: 30px;
   position: relative;
   cursor: pointer;
-  background: url(../assets/img/back.png) 0 0 no-repeat;
+  background: url("../assets/img/back.png") 0 0 no-repeat;
 }
 
 .arrow {
@@ -1126,7 +1121,7 @@ li {
   width: 30px;
   position: relative;
   cursor: pointer;
-  background: url(../assets/img/next.png) 0 0 no-repeat;
+  background: url("../assets/img/next.png") 0 0 no-repeat;
 }
 #pcRicheng .el-tabs__nav .is-top{
    height: 40px;
@@ -1190,27 +1185,6 @@ li {
   line-height: 20px;
   padding: 0 5px;
   font-size: 12px;
-}
-.tab-ge li {
-  display: block;
-  margin-bottom: 10px;
-  border: 2px solid #d2e1fc;
-  color: RGBA(0, 98, 198, 0.8);
-  font-size: 22px;
-  height: 53px;
-  transition: none;
-  border-radius: 5px;
-  width: 136px;
-}
-.tab-ge .layui-this {
-  background-image: url(../assets/img/selected.png);
-  background-size: 100% 100%;
-  border: 0;
-  padding-left: 10px;
-  transition: none;
-  color: #ffffff;
-  font-weight: bold;
-  width: 152px;
 }
 .layui-tab-title li span {
   position: relative;
@@ -1329,7 +1303,6 @@ li {
 .fabutime {
   font-size: 14px!important;
   color: #56220f;
-  font-weight: 550;
   height: 75px;
   line-height: 75px!important;
 }
@@ -1417,15 +1390,6 @@ li {
   margin-left: 10px;
 }
 
-
-.slide-one {
-  background: url(../assets/img/home_top.png) no-repeat center center;
-  background-size: cover;
-}
-.slide-three {
-  background: url(../assets/img/home_anli.jpg) no-repeat center;
-  background-size: cover;
-}
 //最新资讯
 .news-content {
   width: 1240px;
