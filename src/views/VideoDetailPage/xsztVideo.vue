@@ -3,8 +3,6 @@
        <div class="meetarr-banner"><img src="../../assets/img/headerbck.png" alt=""></div>
        <div class="xsvideoparent">
         <video src="../../assets/video/video.mp4" autoplay="autoplay" muted loop  controls="controls" id="homeVideo"></video>
-        <!-- <video src="../../assets/video/webVideo7.mp4" autoplay="autoplay" muted loop  controls="controls" id="homeVideo"></video> -->
-        <!-- <video src="../../assets/video/H264.mp4" autoplay="autoplay" muted loop  controls="controls" id="homeVideo"></video> -->
 
         <div class="xsvideobro">
          <ul>
@@ -92,11 +90,12 @@ ul,li{
 }
 .xsvideobro ul li{
   // border:1px solid red;
-  width: 22%;
+  width: 25%;
   float: left;
-  height: 22%;
+  height: 25%;
   margin: 10px;
-  // background: #ffffff;
+  //background: #ffffff;
+  //opacity: 0.5;
 }
 .xsvideobro ul li:hover{
   cursor: pointer;
@@ -104,125 +103,39 @@ ul,li{
 .xsvideo1{
   // width: 350px!important;
   position: absolute;
-  left: 170px;
-  bottom: 360px;
-  transform: rotateX(40deg) rotateY(-10deg) rotateZ(0deg);
-  animation: rotation 8s linear infinite;
-}
-@keyframes rotation {
-    from {
-        -webkit-transform: rotateX(40deg) rotateY(-10deg) rotateZ(0deg) translateX(20px) translateZ(0px);
-        -ms-transform: rotateX(40deg) rotateY(-10deg) rotateZ(0deg) translateX(20px) translateZ(0px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(30deg) translateX(-120px) translateZ(-70px);
-        -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(30deg) translateX(-120px) translateZ(-70px);
-        opacity: 0.2;
-    }
+  left: 270px;
+  bottom: 40px;
 }
 .xsvideo2{
   position: absolute;
   left: 40px;
-  top: 150px;
-  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
-  animation: rotation2 8s linear infinite;
-}
-@keyframes rotation2 {
-    from {
-        -webkit-transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg) translateX(10px) translateZ(10px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(20deg) rotateY(-40deg) rotateZ(40deg) translateX(-350px) translateZ(-240px);
-        opacity: 1;
-    }
+  top: 350px;
 }
 .xsvideo3{
   // height: 350px!important;
   position: absolute;
-  left: 360px;
-  top: -20px;
-  transform: rotateX(30deg) rotateY(0deg) rotateZ(0deg);
-  animation: rotation3 8s linear infinite;
-}
-@keyframes rotation3 {
-    from {
-        -webkit-transform: rotateX(30deg) rotateY(0deg) rotateZ(0deg) translate(30px,60px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(30deg) rotateY(10deg) rotateZ(40deg) translate(40px);
-        opacity: 1;
-    }
+  left: 320px;
+  top: 20px;
 }
 .xsvideo4{
   position: absolute;
-  right: 300px;
-  top: 60px;
-  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
-  animation: rotation4 8s linear infinite;
-}
-@keyframes rotation4 {
-    from {
-        -webkit-transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateZ(10px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(90deg) rotateY(-10deg) rotateZ(-10deg) translateZ(30px);
-        opacity: 1;
-    }
+  right: 280px;
+  top: 30px;
 }
 .xsvideo5{
   position: absolute;
   right: 80px;
-  top: 250px;
-  transform: rotateX(30deg) rotateY(10deg) rotateZ(0deg);
-  animation: rotation5 8s linear infinite;
-}
-@keyframes rotation5 {
-    from {
-        -webkit-transform: rotateX(30deg) rotateY(0deg) rotateZ(0deg) translate(30px,40px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(30deg) rotateY(-30deg) rotateZ(30deg) translate(30px);
-        opacity: 1;
-    }
+  top: 380px;
 }
 .xsvideo6{
   position: absolute;
   right: 250px;
-  top: 480px;
-  transform: rotateX(30deg) rotateY(0deg) rotateZ(0deg);
-  animation: rotation6 8s linear infinite;
-}
-@keyframes rotation6 {
-    from {
-        -webkit-transform: rotateX(30deg) rotateY(0deg) rotateZ(0deg) translateX(50);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(30deg) rotateY(0deg) rotateZ(10deg) translateX(-150px);
-        opacity: 1;
-    }
+  bottom: 80px;
 }
 .xsvideo7{
   position: absolute;
-  left: 510px;
-  top: 210px;
-  transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-  animation: rotation7 8s linear infinite;
-}
-@keyframes rotation7 {
-    from {
-        -webkit-transform: rotateX(20deg) rotateY(0deg) rotateZ(-10deg) translate(40px,40px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(20deg) rotateY(10deg) rotateZ(40deg) translate(30px);
-        opacity: 1;
-    }
+  left: 620px;
+  top: 410px;
 }
 #homeVideo{
   min-width: 100%;

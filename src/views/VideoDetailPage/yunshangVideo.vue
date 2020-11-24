@@ -72,85 +72,35 @@ ul,li{
   border-radius: 1200px;
   position: relative;
   margin: 0 auto;
-  // border: 1px solid #fffd00;
-  perspective: 500px;   /* 透视 眼睛距离屏幕的距离 */ 
-  transform-style: preserve-3d;
 }
 .videobro ul li{
   // border:1px solid red;
-  width: 24%;
+  width: 28%;
   float: left;
-  height: 24%;
+  height: 28%;
   margin: 10px;
-  // background: #ffffff;
+  //background: #ffffff;
+  //opacity: 0.5;
 }
 .video1{
   position: absolute;
-  left: 400px;
-  top: 470px;
-  transform: rotateX(30deg) rotateY(0deg) rotateZ(-40deg);
-  animation: rotation 8s linear infinite;
-}
-@keyframes rotation {
-    from {
-        -webkit-transform: rotateX(30deg) rotateY(0deg) rotateZ(0deg) translateX(150px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(30deg) rotateY(10deg) rotateZ(20deg) translateX(-20px);
-        opacity: 1;
-    }
+  left: 200px;
+  top: 550px;
 }
 .video2{
   position: absolute;
-  left: 20px;
-  top: 160px;
-  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  animation: rotation2 8s linear infinite;
-}
-@keyframes rotation2 {
-    from {
-        -webkit-transform: rotateX(00deg) rotateY(0deg) rotateZ(0deg) translate(80px,100px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(20deg) rotateY(10deg) rotateZ(40deg) translate(30px);
-        opacity: 1;
-    }
+  left: 80px;
+  top: 180px;
 }
 .video3{
   position: absolute;
-  left: 570px;
-  top: 50px;
-  transform: rotateX(30deg) rotateY(0deg) rotateZ(0deg);
-  animation: rotation3 8s linear infinite;
-}
-@keyframes rotation3 {
-    from {
-        -webkit-transform: rotateX(30deg) rotateY(0deg) rotateZ(0deg) translateX(0px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(30deg) rotateY(10deg) rotateZ(20deg) translateX(40px);
-        opacity: 1;
-    }
+  right: 70px;
+  top: 180px;
 }
 .video4{
   position: absolute;
-  right: 80px;
-  top: 280px;
-  transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
-  animation: rotation4 8s linear infinite;
-}
-@keyframes rotation4 {
-    from {
-        -webkit-transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg) translateZ(-10px);
-        opacity: 0.2;
-    }
-    to {
-        -webkit-transform: rotateX(30deg) rotateY(-10deg) rotateZ(30deg) translateZ(30px);
-        opacity: 1;
-    }
+  right: 120px;
+  top: 550px;
 }
 #homeVideo{
   min-width: 100%;
