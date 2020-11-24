@@ -64,7 +64,7 @@
                 <p><img src="../assets/img/waytwo.png" alt=""></p>
                 <div style="padding-left:106px">
                 <p style="font-size:16px;color:#333333">下载附件，填写完成。发送到邮箱：autumn_sunq@126.com</p>
-                <a href="http://39.106.51.133:8093/shibohui/参展申请表.doc" target="_blank" style="margin:0 auto;width:120px;height:40px;display:block"><img src="../assets/img/downloadbck.png" alt=""></a>
+                <a href="http://39.106.51.133:8082/dongguan/参展申请表.doc" target="_blank" style="margin:0 auto;width:120px;height:40px;display:block"><img src="../assets/img/downloadbck.png" alt=""></a>
                 <div style="color:#333333;text-align: center;width:346px;margin:20px auto">发送完成后，工作人员会在1-3个工作日与您联系期待与您的合作！</div>
                 </div>
               </div>
@@ -81,8 +81,8 @@ export default {
   },
   data() {
     return {
-      url: "http://39.106.51.133:8082/shibohui/att2.pdf",
-      downFileUrl:"http://39.106.51.133:8082/shibohui/参展申请表.doc",
+      url: "http://39.106.51.133:8082/dongguan/att2.pdf",
+      downFileUrl:"http://39.106.51.133:8082/dongguan/参展申请表.doc",
       newsList: [],
       newstype: 1,
       ruleForm: {
