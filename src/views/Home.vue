@@ -646,8 +646,7 @@ ul, li {
 .visitNumber{
   width: 1200px;
   height: 124px;
-  margin: 0 auto;
-  margin-top: -150px;
+  margin: -150px auto 0 auto;
   position: relative;
 }
  .visitNumber ul li{
