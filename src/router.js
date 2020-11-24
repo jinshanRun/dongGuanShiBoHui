@@ -57,7 +57,6 @@ import register from './views/register.vue'
 import userApply from './views/userApply.vue'
 import coopApply from './views/coopApply.vue'
 import waiting from './views/waiting.vue'
-import Vr from './views/Vr.vue'
 // 展商服务
 import exhibitionHall1 from './views/exhibitionHall1.vue'
 import exhibitionGuide2 from './views/exhibitionGuide2.vue'
@@ -689,18 +688,6 @@ let kunmingrouter = new Router({
       name: 'exhibitionForm4',
       components:{
         default:exhibitionForm4,
-        header:AppHeader,
-        footer:AppFooter
-      },
-      meta: {
-        title: '2020东莞进出口食品商洽会'
-      }
-    },
-    {
-      path: '/Vr',
-      name: 'Vr',
-      components:{
-        default:Vr,
         header:AppHeader,
         footer:AppFooter
       },
