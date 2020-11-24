@@ -199,7 +199,7 @@ export default {
                   width: 286px;
                   height: 30px;
                   line-height: 30px;
-                  color: #5173f5;
+                  color: #f9680b;
                   text-align: center;
               }
                &-anpai span{
@@ -224,7 +224,7 @@ export default {
 }
  .meetarr-content-list li p{
         font-size: 18px;
-        color: #5f7ef5;
+        color: #f9680b;
         font-weight: 580;
       }
  .meetarr-content-list li div{

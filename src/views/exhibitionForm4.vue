@@ -33,7 +33,7 @@
                 </el-form-item>
                 <el-form-item label="展品类型" prop="exhibitionType">
                   <el-input v-model="ruleForm.exhibitionType" placeholder="展品名称"></el-input>
-                  <el-radio-group v-model="ruleForm.exhibitionType" id="exhibitionTypeRadios">
+                  <el-radio-group v-model="ruleForm.exhibitionType" class="exhibitionTypeRadios">
                     <p><el-radio label="粮食类及其加工类"></el-radio> <el-radio label="速冻食品类"></el-radio></p>
                     <p><el-radio label="果蔬类及其加工品"></el-radio><el-radio label="蜂产品类"></el-radio></p>
                     <p><el-radio label="肉类及其加工品"></el-radio><el-radio label="茶叶类"></el-radio></p>
@@ -47,15 +47,15 @@
                 </el-form-item>
                 <el-form-item label="展览展示" prop="placeType">
                   <el-input v-model="ruleForm.placeType" placeholder="展品名称"></el-input>
-                  <el-radio-group v-model="ruleForm.placeType" id="exhibitionTypeRadios">
-                    <p><el-radio label="普通参展商：2800元/家"></el-radio></p>
-                    <p><el-radio label="VIP参展商：5500元/家"></el-radio></p>
-                    <p><el-radio label="热门推荐：每天7500元/家 （每天限5家）"></el-radio></p>
+                  <el-radio-group v-model="ruleForm.placeType" class="exhibitionTypeRadios">
+                    <p><el-radio label="普通参展商"></el-radio></p>
+                    <p><el-radio label="VIP参展商"></el-radio></p>
+                    <p><el-radio label="热门推荐）"></el-radio></p>
                   </el-radio-group>
                 </el-form-item>
                 <el-form-item id="exhiButton">
-                  <el-button @click="resetForm('ruleForm')" style="background:#e5e5e5;color:#666666;height:28px;line-height: 0px;width:80px">重置</el-button>
-                  <el-button type="primary" @click="submitForm('ruleForm')" style="background:#5173f5;height:28px;line-height: 0px;width:80px;margin-left:38px">提交</el-button>
+                  <el-button @click="resetForm('ruleForm')" style="background:#e5e5e5;border-color:#e5e5e5;color:#666666;height:28px;line-height: 0px;width:80px">重置</el-button>
+                  <el-button type="primary" @click="submitForm('ruleForm')" style="background:#f9680b;border-color:#e5e5e5;height:28px;line-height: 0px;width:80px;margin-left:38px">提交</el-button>
                 </el-form-item>
               </el-form>
             </div>
@@ -314,16 +314,16 @@ export default {
 #exhibitionRuleForm  .el-form-item{
   margin-bottom: 22px;
 }
-#exhibitionTypeRadios{
+.exhibitionTypeRadios{
   margin-top: 16px;
 }
-#exhibitionTypeRadios p {
+.exhibitionTypeRadios p {
   margin-bottom: 14px;
 }
-#exhibitionTypeRadios p label:first-child {
+.exhibitionTypeRadios p label:first-child {
   width:128px;
 }
-#exhibitionTypeRadios p label:nth-child(2){
+.exhibitionTypeRadios p label:nth-child(2){
   // float: right;
 }
 #exhiButton .el-form-item__content{

@@ -60,9 +60,9 @@
           <div></div>
           </li>
         <li>
-          <router-link :to="{ name: 'foodculture1' }"
+          <router-link :to="{ name: 'yunshangVideo' }"
             ><img :src="srcMouseenter4" alt=""/><br/>
-            <span>食文化</span>
+            <span>年货采购节</span>
             </router-link>
             <div></div>
         </li>
@@ -86,6 +86,7 @@
     </div>
     <!-- 新闻中心 -->
     <div class="newpart">
+      <div style="width: 1200px;overflow: hidden;margin: 0 auto;">
       <div class="newcon">
         <p class="newsbck"><span>新闻中心</span><router-link :to="{name: 'news'}"><img src="../assets/img/more.png" alt=""></router-link></p>
         <ul style="position: relative;">
@@ -104,6 +105,7 @@
           ><img src="../assets/img/newright.png" alt="点击进入详情"
         /></router-link>
       </div>
+      </div>
     </div>
     </div>
     <!-- 云上展厅 -->
@@ -111,17 +113,17 @@
       <div style="position: absolute;left: 0;top:-52px"> <img src="../assets/img/meetingtopbck.png"/> </div>
       <div class="yunhall">
       <ul>
-        <li>
-          <router-link :to="{name: 'yunshangVideo'}"><img src="../assets/img/hall1.png" alt="" /></router-link>
+        <li @mouseenter="changeEnterHallImg1()" @mouseleave="changeLeaveHallImg1()">
+          <router-link :to="{name: 'yunshangVideo'}"><img :src="yunShangimg1" alt="" /></router-link>
         </li>
-        <li>
-           <router-link :to="{name: 'yunshangVideo'}"><img src="../assets/img/hall2.png" alt="" /></router-link>
+        <li @mouseenter="changeEnterHallImg2()" @mouseleave="changeLeaveHallImg2()">
+           <router-link :to="{name: 'yunshangVideo'}"><img :src="yunShangimg2" alt="" /></router-link>
         </li>
-        <li>
-           <router-link :to="{name: 'yunshangVideo'}"><img src="../assets/img/hall3.png" alt="" /></router-link>
+        <li @mouseenter="changeEnterHallImg3()" @mouseleave="changeLeaveHallImg3()">
+           <router-link :to="{name: 'yunshangVideo'}"><img :src="yunShangimg3" alt="" /></router-link>
         </li>
-        <li>
-           <router-link :to="{name: 'yunshangVideo'}"><img src="../assets/img/hall4.png" alt="" /></router-link>
+        <li @mouseenter="changeEnterHallImg4()" @mouseleave="changeLeaveHallImg4()">
+           <router-link :to="{name: 'yunshangVideo'}"><img :src="yunShangimg4" alt="" /></router-link>
         </li>
       </ul>
     </div>
@@ -533,6 +535,10 @@ export default {
       srcMouseenter4:require('@/assets/img/shiwenhua1.png'),
       srcMouseenter5:require('@/assets/img/yincai1.png'),
       srcMouseenter6:require('@/assets/img/haoshipin1.png'),
+      yunShangimg1:require('@/assets/img/hall1.png'),
+      yunShangimg2:require('@/assets/img/hall2.png'),
+      yunShangimg3:require('@/assets/img/hall3.png'),
+      yunShangimg4:require('@/assets/img/hall4.png')
     };
   },
   created() {},
@@ -590,6 +596,31 @@ export default {
     nowvisitNumber(){
       this.$http.get("/loginapi/browsingSave")
     },
+    // 云上展厅鼠标移上去更换图片
+    changeEnterHallImg1(){
+      this.yunShangimg1 =  require('@/assets/img/hall1h.png')
+    },
+    changeLeaveHallImg1(){
+      this.yunShangimg1 =  require('@/assets/img/hall1.png')
+    },
+    changeEnterHallImg2(){
+      this.yunShangimg2 =  require('@/assets/img/hall2h.png')
+    },
+    changeLeaveHallImg2(){
+      this.yunShangimg2 =  require('@/assets/img/hall2.png')
+    },
+    changeEnterHallImg3(){
+      this.yunShangimg3 =  require('@/assets/img/hall3h .png')
+    },
+    changeLeaveHallImg3(){
+      this.yunShangimg3 =  require('@/assets/img/hall3.png')
+    },
+    changeEnterHallImg4(){
+      this.yunShangimg4 =  require('@/assets/img/hall4h.png')
+    },
+    changeLeaveHallImg4(){
+      this.yunShangimg4 =  require('@/assets/img/hall4.png')
+    },
   },
 };
 </script>
@@ -640,7 +671,7 @@ li {
   overflow: hidden;
 }
 .home-banner {
-  //width: 100%;
+  width: 100%;
   //height: 100%;
 }
 .home-banner img {
@@ -845,16 +876,20 @@ li {
 }
 // 新闻中心
 .newpart {
-  width: 1200px;
+  width: 1270px;
+  height: 380px;
   margin: 40px auto;
   overflow: hidden;
+  background: url("../assets/img/newconback.png") no-repeat no-repeat;
 }
 .newcon {
-  width: 590px;
+  width: 614px;
   float: left;
+  margin-top: 15px;
 }
 .newsbck {
-  width: 590px;
+  width: 592px;
+  height: 60px;
 
 }
 .newsbck span {
@@ -894,6 +929,7 @@ li {
   font-family: "微软雅黑";
   overflow: hidden;
   margin-left: 8px;
+  padding-right: 40px;
 }
 .newcon ul li:hover .newscontitle{
  //transform: scale(1.02);
@@ -946,21 +982,25 @@ li {
 }
 .yunhall {
   width: 1200px;
-  height: 260px;
+  height: 320px;
   margin: 0 auto;
   overflow: hidden;
   padding-top: 86px;
 }
 .yunhall ul li {
   float: left;
-  width: 260px;
-  height: 260px;
-  margin-left: 53px;
+  width: 257px;
+  height: 306px;
+  margin-left: 56px;
   // padding: 4px;
 }
 .yunhall ul li:hover{
-    //transform: scale(1.02);
-    //box-shadow: rgba(191, 194, 204, 0.6) 0px 0px 15px 10px;
+  margin-top: -12px;
+}
+.yunhall ul li a{
+  display: block;
+  width: 257px;
+  height: 306px;
 }
 .yunhall ul li:first-child {
   margin-left: 0px;
@@ -1023,8 +1063,8 @@ li {
 .todayp2 {
   font-size: 28px;
   font-weight: 600;
-  height: 90px;
-  line-height: 100px;
+  height: 60px;
+  line-height: 60px;
 }
 .todayActivity ul li span {
   font-size: 16px;
@@ -1134,6 +1174,9 @@ li {
 }
 #pcRicheng .el-tabs--border-card>.el-tabs__header{
   background: none!important;
+}
+#pcRicheng  .el-tabs--border-card>.el-tabs__header{
+  border-bottom: none!important;
 }
  #pcRicheng .el-tabs__nav-scroll{
   color: #ff0027!important;
@@ -1316,12 +1359,12 @@ li {
 .guestbutton1 {
   position: absolute;
   left: 0px;
-  top: 46%;
+  top: 32%;
 }
 .guestbutton2 {
   position: absolute;
   right: 0px;
-  top: 46%;
+  top: 32%;
 }
 .guest ul {
   width: 1230px;
@@ -1458,5 +1501,10 @@ li {
 }
 .order-img {
   order: 1;
+}
+//按钮颜色
+.el-button--primary{
+  background-color:#f9680b!important;
+  border-color: #f9680b!important;
 }
 </style>

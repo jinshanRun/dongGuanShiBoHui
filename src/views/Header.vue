@@ -5,8 +5,8 @@
           :default-active="defaultActive"
           class="el-menu-demo"
           mode="horizontal"
-          text-color="#0071fc"
-          background-color="rgba(255, 255, 255,0.8)"
+          text-color="#ffffff"
+          background-color="rgba(231, 118, 0,0.8)"
           @select="handleSelect"
           :router="router">
           <el-menu-item index="/">首页</el-menu-item>
@@ -91,6 +91,8 @@ export default {
        height: 60px;
        position: relative;
        background: url("../assets/img/headerback.png") no-repeat no-repeat;
+       background-size: 100% 100%;
+     z-index: 999;
 
    }
     .el-header {
@@ -150,17 +152,17 @@ export default {
       font-weight: bolder;
     }
     .el-menu--collapse .el-menu .el-submenu, .el-menu--popup .el-menu-item a{
-      color: #0071fc!important;
+      color: #fff!important;
     }
     .el-menu--collapse .el-menu .el-submenu, .el-menu--popup .el-menu-item a:hover{
       color: #ffffff!important;
     }
     .el-menu-item:hover {
-        background-color: rgb(255,14,51) !important;
+        background-color: rgb(231,118,0) !important;
         color: #fff!important;
     }
     .el-submenu:hover{
-        background-color: rgb(255,14,51) !important;  //有下拉框的item
+        background-color: rgb(231,118,0) !important;  //有下拉框的item
     }
      //.el-submenu__title:hover{
      //    background-color: rgba(39, 39, 39,0.3) !important;
@@ -169,19 +171,19 @@ export default {
         color: #fff;
     }
     .el-menu-item.is-active {
-        background-color: rgb(255,14,51) !important;
+        background-color: rgb(231,118,0) !important;
         color: #fff;
     }
     .el-submenu__title:hover .el-menu .el-menu--popup .el-menu--popup-bottom-start {
-        background-color: rgb(255,14,51) !important;
+        background-color: rgb(231,118,0) !important;
         margin-top: 10px !important;
     }
     .el-submenu__title:hover .el-menu .el-menu--popup .el-menu--popup-bottom-start .el-menu-item {
-        background-color: rgb(255,14,51) !important;
+        background-color: rgb(231,118,0) !important;
         margin-top: 10px !important;
     }
     .nohover:hover{
-     background-color: rgb(255,14,51) !important;
+     background-color: rgb(231,118,0) !important;
     }
     .el-main {
         padding: 0 !important;

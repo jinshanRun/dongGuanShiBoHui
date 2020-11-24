@@ -21,7 +21,6 @@
       </div>
       <!-- 合作伙伴 -->
       <div class="hezuo">
-        <div class="zhanhezuo">
           <ul>
             <li>
               <img src="../assets/img/Heback1.png"/>
@@ -33,10 +32,9 @@
               <img src="../assets/img/Heback3.png"/>
             </li>
             <li>
-              <img src="../assets/img/Heback1.png"/>
+              <img src="../assets/img/Heback4.png"/>
             </li>
           </ul>
-        </div>
       </div>
     </div>
         <div class="footer-content">
@@ -183,7 +181,7 @@ body {
 .zhanhezuo{
   height: 334px;
 }
-.zhanhezuo ul li{
+.zhanhezuo ul li,.hezuo ul li{
   width: 270px;
   height: 100px;
   float: left;
@@ -194,11 +192,20 @@ body {
 .zhanhezuo ul li:first-child{
   margin-left: 0;
 }
+.hezuo ul li:first-child{
+  margin-left: 0;
+}
 .zhanhezuo ul li img{
-  width: 230px;
+  width: 207px;
   height: 80px;
   margin: 8px 0;
 }
+.hezuo ul li img{
+  width: 120px;
+  height: 80px;
+  margin: 8px 0;
+}
+
 // 备案号
 .beian{
   width: 100%;

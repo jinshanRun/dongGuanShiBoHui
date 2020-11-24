@@ -116,7 +116,7 @@ export default {
   line-height: 30px;
   text-align: center;
   font-size: 16px;
-  background: #0071fc;
+  background: #f9680b;
   color: #ffffff;
 }
 .guestxqlist  div p{
@@ -136,7 +136,7 @@ export default {
 }
  .meetarr-content-list li p{
         font-size: 18px;
-        color: #5f7ef5;
+        color: #f9680b;
         font-weight: 580;
       }
  .meetarr-content-list li div{
@@ -163,7 +163,7 @@ export default {
         height: 40px;
         line-height: 40px;
         text-align: center;
-        background: #5173f5;
+        background: #f9680b;
         color: #ffffff;
         font-size: 18px;
         font-weight: 600;
