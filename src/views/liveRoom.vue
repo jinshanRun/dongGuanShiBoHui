@@ -179,7 +179,7 @@ export default {
 .liveRemind{
   // width: 335px;
   padding:32px 0px;
-  margin-left: 40px;
+  margin-left: 25px;
   float: left;
   span{
     display: block;
@@ -209,7 +209,7 @@ export default {
     line-height: 40px;
     font-size: 16px;
     color: #ffffff!important;
-    background: #0071fc;
+    background: #f9680b;
   }
 }
 .liveli{
@@ -236,7 +236,7 @@ export default {
     line-height: 40px;
     font-size: 16px;
     color: #ffffff!important;
-    background:#ababab;
+    background:#f4c4a6;
 }
 
 </style>

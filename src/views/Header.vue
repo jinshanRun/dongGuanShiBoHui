@@ -30,7 +30,7 @@
           </el-submenu>
           <el-submenu index="4">
             <template slot="title">走进博览会</template>
-            <el-menu-item index="/expo1">展会概括</el-menu-item>
+            <el-menu-item index="/expo1">展会概况</el-menu-item>
             <el-menu-item index="/expo2">组织机构</el-menu-item>
             <el-menu-item index="/expo3">联系我们</el-menu-item>
           </el-submenu>

@@ -47,11 +47,11 @@
                 </el-form-item>
                 <el-form-item label="展览展示" prop="placeType">
                   <el-input v-model="ruleForm.placeType" placeholder="展品名称"></el-input>
-                  <el-radio-group v-model="ruleForm.placeType" class="exhibitionTypeRadios">
-                    <p><el-radio label="普通参展商"></el-radio></p>
-                    <p><el-radio label="VIP参展商"></el-radio></p>
-                    <p><el-radio label="热门推荐）"></el-radio></p>
-                  </el-radio-group>
+<!--                  <el-radio-group v-model="ruleForm.placeType" class="exhibitionTypeRadios">-->
+<!--                    <p><el-radio label="普通参展商"></el-radio></p>-->
+<!--                    <p><el-radio label="VIP参展商"></el-radio></p>-->
+<!--                    <p><el-radio label="热门推荐）"></el-radio></p>-->
+<!--                  </el-radio-group>-->
                 </el-form-item>
                 <el-form-item id="exhiButton">
                   <el-button @click="resetForm('ruleForm')" style="background:#e5e5e5;border-color:#e5e5e5;color:#666666;height:28px;line-height: 0px;width:80px">重置</el-button>
@@ -99,9 +99,9 @@ export default {
             { required: true, message: '请输入参展机构公司全称', trigger: 'blur' },
             { min: 3, max: 20, message: '长度在 3 到 20 个字符', trigger: 'blur' }
           ],
-          companyAddress: [
-            { required: true, message: '请输入公司/机构所在地址', trigger: 'blur' }
-          ],
+          // companyAddress: [
+          //   { required: true, message: '请输入公司/机构所在地址', trigger: 'blur' }
+          // ],
           contactName: [
             { required: true, message: '请输入联系人', trigger: 'blur' }
           ],
@@ -109,15 +109,15 @@ export default {
             { required: true, message: '请输入手机号', trigger: 'blur' },
             {min:11,max:11,message:'请输入正确格式的11位手机号',trigger: 'blur'}
           ],
-          goodsName: [
-            { required: true, message: '请输入展品名称', trigger: 'blur' }
-          ],
-          exhibitionType: [
-            { required: true,message: '请选择参展类别', trigger: 'blur' }
-          ],
-          placeType: [
-            {required: true, message: '请选择展览展示', trigger: 'blur' }
-          ],
+          // goodsName: [
+          //   { required: true, message: '请输入展品名称', trigger: 'blur' }
+          // ],
+          // exhibitionType: [
+          //   { required: true,message: '请选择参展类别', trigger: 'blur' }
+          // ],
+          // placeType: [
+          //   {required: true, message: '请选择展览展示', trigger: 'blur' }
+          // ],
         }
     };
   },
@@ -127,10 +127,10 @@ export default {
              this.$message.error("请输入参展机构公司全称");
              return;
          }
-         if(!this.ruleForm.companyAddress){
-             this.$message.error("请输入公司/机构所在地址");
-             return;
-         }
+         // if(!this.ruleForm.companyAddress){
+         //     this.$message.error("请输入公司/机构所在地址");
+         //     return;
+         // }
          if (!this.ruleForm.contactName) {
              this.$message.error("请输入联系人");
              return;
@@ -143,18 +143,18 @@ export default {
               this.$message.error("请输入正确的手机号");
               return;
          }
-         if(!this.ruleForm.goodsName){
-             this.$message.error("请输入展品名称");
-             return;
-         }
-         if(!this.ruleForm.exhibitionType){
-             this.$message.error("请选择参展类别");
-             return;
-         }
-         if(!this.ruleForm.placeType){
-             this.$message.error("请选择展览展示");
-             return;
-         }
+         // if(!this.ruleForm.goodsName){
+         //     this.$message.error("请输入展品名称");
+         //     return;
+         // }
+         // if(!this.ruleForm.exhibitionType){
+         //     this.$message.error("请选择参展类别");
+         //     return;
+         // }
+         // if(!this.ruleForm.placeType){
+         //     this.$message.error("请选择展览展示");
+         //     return;
+         // }
        var CompanySignUpDTO =
           {
             "companyName": this.ruleForm.companyName,

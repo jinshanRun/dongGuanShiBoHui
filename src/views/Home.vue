@@ -110,14 +110,14 @@
     </div>
     <!-- 云上展厅 -->
     <div id="myPCcontent2">
-      <div style="position: absolute;left: 0;top:-52px"> <img src="../assets/img/meetingtopbck.png"/> </div>
+      <div style="position: absolute;left: 0;top:-52px"> <img src="../assets/img/meetingtopbck.png" style="width: 100%"/> </div>
       <div class="yunhall">
       <ul>
         <li @mouseenter="changeEnterHallImg1()" @mouseleave="changeLeaveHallImg1()">
-          <router-link :to="{name: 'yunshangVideo'}"><img :src="yunShangimg1" alt="" /></router-link>
+          <a href="https://720yun.com/t/c1vksqd77r9?scene_id=48573547" target="_blank"><img :src="yunShangimg1" alt="" /></a>
         </li>
         <li @mouseenter="changeEnterHallImg2()" @mouseleave="changeLeaveHallImg2()">
-           <router-link :to="{name: 'yunshangVideo'}"><img :src="yunShangimg2" alt="" /></router-link>
+           <a href="https://720yun.com/t/a2vkn9f77pl?scene_id=29675239" target="_blank"><img :src="yunShangimg2" alt="" /></a>
         </li>
         <li @mouseenter="changeEnterHallImg3()" @mouseleave="changeLeaveHallImg3()">
            <router-link :to="{name: 'yunshangVideo'}"><img :src="yunShangimg3" alt="" /></router-link>
@@ -127,7 +127,7 @@
         </li>
       </ul>
     </div>
-      <div style="position: absolute;left: 0;bottom:-38px"> <img src="../assets/img/zhanhuitop.png"/> </div>
+      <div style="position: absolute;left: 0;bottom:-38px"> <img src="../assets/img/zhanhuitop.png" style="width: 100%"/> </div>
     </div>
 
     <!-- 会议日程 and活动日程 -->
@@ -671,11 +671,11 @@ li {
   overflow: hidden;
 }
 .home-banner {
-  width: 100%;
+  //width: 100%;
   //height: 100%;
 }
 .home-banner img {
-  //width: 100%;
+  width: 100%;
   //height: 100%;
 }
 .visitNumber{

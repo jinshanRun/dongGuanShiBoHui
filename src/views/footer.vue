@@ -44,20 +44,16 @@
               <span>商务部</span>
               <span>国家国资委</span>
               <span>有关部委 </span>
-            </li>
-            <li>
-              <p>支持单位</p>
+              <p style="margin-top: 10px;">支持单位</p>
               <span>中国轻工业联合会</span>
-              <span> 广东省人民政府</span>
+              <span>云南省人民政府</span>
             </li>
             <li>
               <p>主办单位</p>
               <span>中国食品报社 </span>
               <span> 商务部投资促进事务局</span>
               <span> 东莞市人民政府</span>
-            </li>
-            <li>
-              <p>承办单位</p>
+              <p style="margin-top: 10px;">承办单位</p>
               <span>中国国际贸促会商业行业分会 </span>
               <span> 中国食品报社信息中心</span>
               <span>东莞市商务局</span>
@@ -67,11 +63,41 @@
               <span>中青联盟大数据研究（北京）有限公司 </span>
               <span>北京高斯智慧科技有限公司</span>
               <span>四川柏视文化传媒有限公司</span>
-            </li>
-             <li>
-              <p>联系我们</p>
+              <p style="margin-top: 10px;">联系我们</p>
               <span>手机：15011380203  </span>
               <span>邮箱：autumn_sunq@126.com</span>
+            </li>
+             <li>
+               <p>宣传媒体</p>
+               <span>人民日报</span>
+               <span>新华社</span>
+               <span>中央电视台</span>
+               <span>光明日报</span>
+               <span>中国经济日报</span>
+               <span>中国日报</span>
+               <span>中新社</span>
+            </li>
+            <li>
+              <p></p>
+              <p></p>
+              <span>中国青年报</span>
+              <span>中国商报</span>
+              <span>南方日报</span>
+              <span>中国广播电视台</span>
+              <span>21经济网</span>
+              <span>腾讯新闻</span>
+              <span>凤凰网</span>
+            </li>
+            <li>
+              <p></p>
+              <p></p>
+              <span>网易</span>
+              <span>新浪</span>
+              <span>搜狐</span>
+              <span>香港商报</span>
+              <span>澳门日报</span>
+              <span>抖音</span>
+              <span>快手</span>
             </li>
           </ul>
         </div>
@@ -112,11 +138,12 @@ body {
   overflow: hidden;
   // position: absolute;
   // bottom: 0;
-  background-color: #9a2122;
+  background:url("../assets/img/footerback.png") no-repeat no-repeat;
+  background-size: 100% 100%;
   &-content {
     width: 1240px;
     margin: 0 auto;
-    padding: 40px 0px;
+    padding: 24px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
     .content-nav {
