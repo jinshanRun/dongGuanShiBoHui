@@ -2,28 +2,30 @@
     <div class="expo">
       <div class="expo-banner" v-loading="loading"><img src="../assets/img/expobanner.png" alt=""></div>
       <div class="expo-content">
-     <p><img src="../assets/img/lication.png" alt="">当前位置：<a href="/">首页</a>>走进博览会><span>展会概括</span></p>
+     <p><img src="../assets/img/lication.png" alt="">当前位置：<a href="/">首页</a>>走进博览会><span>展会概况</span></p>
           <div class="expo-content-left">
               <ul class="expo-content-list">
-                  <li>展会概括</li>
+                  <li>展会概况</li>
                   <li><router-link :to="{name:'expo2'}">组织机构</router-link></li>
                   <li><router-link :to="{name:'expo3'}">联系我们</router-link></li>
               </ul>
           </div>
           <div class="expo-content-right">
-              <p style="font-weight:600">2020中国食文化国际交流博览会</p>
+              <p style="font-weight:600">中国（大湾区）进出口食品商洽会暨首届东莞年货采购节</p>
               <div class="expo-content-xq">
                <div>
                  <p>活动主题：</p>
-                 <p>加强食品文化交流，推进品质消费提档</p>
+                 <p>荟集中外食品 融合行业投资  共享美好生活</p>
                </div>
                <div>
                  <p>展会时间：</p>
-                 <p>2020年11月16日-2020年11月22日</p>
+                 <p>2021年1月28日-31日</p>
                </div>
                <div>
                  <p>活动宗旨：</p>
-                 <p> 以食品文化交流为重点和导向，以文化艺术为纽带，联动食品业与相关行业，以实现交流与互渗； 传播中国悠久厚重而又独具魅力的食品文化，以实现食品相关产业的软着陆；跟随“一带一路”战略的文化交流的大繁荣，助推中国食品更多更好地走向全世界；通过“中华传统好食品”评价，保护“中华传统好食品”的品质与声誉，加强《中华传统好食品评价通则》的落实力度，打造中国食品的国家品牌，促进新时代中国食品产业升级发展。</p>
+                 <p> 在东莞市举办“中国（大湾区）进出口食品商洽会暨首届东莞年货采购节”，对于助力大湾区建设，加快食品经济与商贸流通双轮驱动，推动食品国内外交易、行业经济高速发展和群众春节年货保障与文化交流等都具有十分重要的意义。<br/>
+                   活动共设置“食品行业暨跨境电商投资高峰论坛”、“进出口高质量食品采购商洽会”、“进出口食品展览展销”、“首届东莞年货采购节”等板块。商洽大会主要以数字驱动和云端展览为主，辅以线下展厅，汇聚大批进出口食品企业和世界各地美好食品、食材，为中国进出口食品行业和企业在十四个五年规划周期，开篇布局好起步。推动进出口食品企业拥抱新变化，孕育新商机！
+                 </p>
                </div>
 
               </div>

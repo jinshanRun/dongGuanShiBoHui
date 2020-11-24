@@ -5,7 +5,7 @@
      <p><img src="../assets/img/lication.png" alt="">当前位置：<a href="/">首页</a>>走进博览会><span>联系我们</span></p>
           <div class="expo-content-left">
               <ul class="expo-content-list">
-                  <li><router-link :to="{name:'expo1'}">展会概括</router-link></li>
+                  <li><router-link :to="{name:'expo1'}">展会概况</router-link></li>
                   <li><router-link :to="{name:'expo2'}">组织机构</router-link></li>
                   <li>联系我们</li>
               </ul>
