@@ -8,7 +8,7 @@
         <el-table :data="liveList">
             <el-table-column fixed prop="title" label="直播标题" width="300" />
             <el-table-column prop="showTimeItem" label="直播时间" width="180" />
-            <el-table-column prop="endshowTime" label="直播结束时间" width="180" />
+            <el-table-column prop="endShowTime" label="直播结束时间" width="180" />
             <el-table-column prop="url" label="直播链接" width="700" />
             <el-table-column
                     label="操作"
