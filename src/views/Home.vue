@@ -60,8 +60,7 @@
           <div></div>
           </li>
         <li>
-          <router-link :to="{ name: 'yunshangVideo' }"
-            ><img :src="srcMouseenter4" alt=""/><br/>
+          <router-link :to="{ name: 'yunshangVideo' }"><img :src="srcMouseenter4" alt=""/><br/>
             <span>年货采购节</span>
             </router-link>
             <div></div>
@@ -101,9 +100,8 @@
         </ul>
       </div>
       <div class="sevenzhan">
-        <router-link :to="{ name: 'xsztVideo' }"
-          ><img src="../assets/img/newright.png" alt="点击进入详情"
-        /></router-link>
+        <router-link :to="{ name: 'xsztVideo' }"><img src="../assets/img/newright.png" alt="点击进入详情"/>
+        </router-link>
       </div>
       </div>
     </div>
@@ -169,8 +167,7 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年1月28日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          参加中国食文化国际交流、中国食品科技成果展览、食品产业博览会人员陆续布展
                        </div>
                        </router-link>
@@ -187,16 +184,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年1月29日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          线上线下同步开展
-                       </div></router-link
-                       >
+                       </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }" >
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -211,16 +205,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年1月30日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          中国食文化国际交流博览会开幕、“中华传统好食品”颁奖典礼
-                       </div></router-link
-                       >
+                       </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }" >
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -233,16 +224,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年1月30日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          举行食品经济发展国际高峰论坛及投融资对接会
-                       </div></router-link
-                       >
+                       </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }">
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -257,16 +245,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年2月1日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          开展中外食品科技产业发展对话活动
-                       </div></router-link
-                       >
+                       </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }" >
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -279,16 +264,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年2月1日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会
-                       </div></router-link
-                       >
+                       </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }">
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -303,16 +285,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年2月2日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          开展中外食品科技产业发展对话活动
-                       </div></router-link
-                       >
+                       </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }" >
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -325,16 +304,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年2月2日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会
-                       </div></router-link
-                       >
+                       </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }">
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -346,16 +322,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年2月3日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          线下展会结束
-                       </div></router-link
-                       >
+                       </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }" >
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -364,15 +337,13 @@
                    <ul>
                      <li class="info-list-item">
                        <div class="now-date">2021年2月3日</div>
-                       <router-link :to="{ name: 'meetarr' }"
-                       ><div class="now-title">
+                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          线上展会结束
                        </div></router-link>
                        <div class="kms">
                          <router-link :to="{ name: 'meetarr' }" >
                            <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link
-                         >
+                         </router-link>
                        </div>
                      </li>
                    </ul>
@@ -402,8 +373,7 @@
             <img src="../assets/img/apply3.png" alt=""/></router-link>
         </div>
         <div>
-          <router-link :to="{ name: 'coopApply' }"
-          ><img src="../assets/img/apply4.png" alt=""
+          <router-link :to="{ name: 'coopApply' }"><img src="../assets/img/apply4.png" alt=""
           /></router-link>
         </div>
       </div>
@@ -509,7 +479,7 @@
   </div>
 </template>
 <script>
-import animate from "animate.css"
+// import animate from "animate.css"
 export default {
   name: "HelloWorld",
   components: {
@@ -645,10 +615,6 @@ export default {
         margin: 0;
         text-decoration: none;
     }
- //img{
- //  width: 100%;
- //  height: 100%;
- //}
     html,
     body {
         height: 100%;
@@ -662,8 +628,7 @@ export default {
         color: #2c3e50;
     }
 
-ul,
-li {
+ul, li {
   list-style: none;
   text-decoration: none;
 }
@@ -894,7 +859,7 @@ li {
 }
 .newsbck span {
   display: inline-block;
-  background: url(../assets/img/denglong.png) no-repeat no-repeat left;
+  background: url("../assets/img/denglong.png") no-repeat no-repeat left;
   width: 130px;
   height: 50px;
   font-size: 18px;
@@ -1031,7 +996,7 @@ li {
 }
  .Todaynewsbck span {
    display: inline-block;
-   background: url(../assets/img/denglong.png) no-repeat no-repeat left;
+   background: url("../assets/img/denglong.png") no-repeat no-repeat left;
    width: 130px;
    height: 50px;
    font-size: 18px;
@@ -1077,7 +1042,7 @@ li {
 .todayActivity ul li p {
   font-size: 20px;
   line-height: 40px;
-  font-weight: 1000;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 // 活动日程
@@ -1108,7 +1073,7 @@ li {
   width: 30px;
   position: relative;
   cursor: pointer;
-  background: url(../assets/img/back.png) 0 0 no-repeat;
+  background: url("../assets/img/back.png") 0 0 no-repeat;
 }
 
 .arrow {
@@ -1126,7 +1091,7 @@ li {
   width: 30px;
   position: relative;
   cursor: pointer;
-  background: url(../assets/img/next.png) 0 0 no-repeat;
+  background: url("../assets/img/next.png") 0 0 no-repeat;
 }
 #pcRicheng .el-tabs__nav .is-top{
    height: 40px;
@@ -1191,27 +1156,6 @@ li {
   padding: 0 5px;
   font-size: 12px;
 }
-.tab-ge li {
-  display: block;
-  margin-bottom: 10px;
-  border: 2px solid #d2e1fc;
-  color: RGBA(0, 98, 198, 0.8);
-  font-size: 22px;
-  height: 53px;
-  transition: none;
-  border-radius: 5px;
-  width: 136px;
-}
-.tab-ge .layui-this {
-  background-image: url(../assets/img/selected.png);
-  background-size: 100% 100%;
-  border: 0;
-  padding-left: 10px;
-  transition: none;
-  color: #ffffff;
-  font-weight: bold;
-  width: 152px;
-}
 .layui-tab-title li span {
   position: relative;
   top: 8px;
@@ -1234,13 +1178,13 @@ li {
   font-size: 16px;
   color: #333333;
 }
-#kms {
+.kms {
   float: right;
 }
-#kms a {
+.kms a {
   margin-top: -12px;
 }
-#kms a img{
+.kms a img{
   vertical-align: bottom;
 }
 // 展商报名 媒体注册
@@ -1329,7 +1273,6 @@ li {
 .fabutime {
   font-size: 14px!important;
   color: #56220f;
-  font-weight: 550;
   height: 75px;
   line-height: 75px!important;
 }
@@ -1417,15 +1360,6 @@ li {
   margin-left: 10px;
 }
 
-
-.slide-one {
-  background: url(../assets/img/home_top.png) no-repeat center center;
-  background-size: cover;
-}
-.slide-three {
-  background: url(../assets/img/home_anli.jpg) no-repeat center;
-  background-size: cover;
-}
 //最新资讯
 .news-content {
   width: 1240px;

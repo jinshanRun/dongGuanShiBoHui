@@ -172,9 +172,10 @@ export default {
 }
 .goodfood2cont{
   line-height: 40px;
+  font-size: 18px;
 }
 .goodfood2cont span{
-  font-size: 16px;
+  font-size: 18px;
   color: #7692ff;
   
 }
