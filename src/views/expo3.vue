@@ -11,7 +11,7 @@
               </ul>
           </div>
           <div class="expo-content-right">
-              <p style="font-weight:600">2020中国食文化国际交流博览会</p>
+              <p style="font-weight:600">2021中国食文化国际交流博览会</p>
               <div class="expo-content-xq">
                <div>
                  <p>地址：</p>

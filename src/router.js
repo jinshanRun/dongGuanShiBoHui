@@ -90,7 +90,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会',
+        title: '2021中国(大湾区)进出口食品商洽会&年货节',
       },
     },
     {
@@ -102,7 +102,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -114,7 +114,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -126,7 +126,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -138,7 +138,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -150,7 +150,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -162,7 +162,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -174,7 +174,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -186,7 +186,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -198,7 +198,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -210,7 +210,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -222,7 +222,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -234,7 +234,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -246,7 +246,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -258,7 +258,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -270,7 +270,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -282,7 +282,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -294,7 +294,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -306,7 +306,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -318,7 +318,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -330,7 +330,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -342,7 +342,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -354,7 +354,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -366,7 +366,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -378,7 +378,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -390,7 +390,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     // 视频跳转页面及其详情页
@@ -403,7 +403,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -415,7 +415,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -427,7 +427,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -439,7 +439,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -450,7 +450,7 @@ let kunmingrouter = new Router({
         header:AppHeader,
         footer:AppFooter
       },
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       },
     {
       path: '/companyfoodCulture5',
@@ -461,7 +461,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -473,7 +473,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -485,7 +485,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
 
@@ -499,7 +499,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -511,7 +511,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -523,7 +523,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -535,7 +535,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
 
@@ -548,7 +548,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -560,7 +560,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -572,7 +572,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -584,7 +584,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -596,7 +596,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -608,7 +608,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -620,7 +620,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -632,7 +632,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -644,7 +644,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -656,7 +656,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -668,7 +668,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -680,7 +680,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -692,7 +692,7 @@ let kunmingrouter = new Router({
         footer:AppFooter
       },
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     // {
@@ -736,7 +736,7 @@ let kunmingrouter = new Router({
       name: 'exhibitionCompanylist',
       component: exhibitionCompanylist,
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -744,7 +744,7 @@ let kunmingrouter = new Router({
       name: 'mobileliveRoom',
       component: mobileliveRoom,
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -752,7 +752,7 @@ let kunmingrouter = new Router({
       name: 'mobilenewsList',
       component: mobilenewsList,
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -760,7 +760,7 @@ let kunmingrouter = new Router({
       name: 'mobilenewsdetails',
       component: mobilenewsdetails,
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -768,7 +768,7 @@ let kunmingrouter = new Router({
       name: 'companyListdetails',
       component: companyListdetails,
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -776,7 +776,7 @@ let kunmingrouter = new Router({
       name: 'mobilemeetarr',
       component: mobilemeetarr,
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
     {
@@ -784,7 +784,7 @@ let kunmingrouter = new Router({
       name: 'guestarr',
       component: guestarr,
       meta: {
-        title: '2020东莞进出口食品商洽会'
+        title: '2021中国(大湾区)进出口食品商洽会&年货节'
       }
     },
    {
@@ -792,7 +792,7 @@ let kunmingrouter = new Router({
      name: "mobilekunming",
      component: mobilekunming,
      meta: {
-       title: '2020东莞进出口食品商洽会'
+       title: '2021中国(大湾区)进出口食品商洽会&年货节'
      }
    },
    {
@@ -800,7 +800,7 @@ let kunmingrouter = new Router({
     name: "mobileContact",
     component: mobileContact,
     meta: {
-      title: '2020东莞进出口食品商洽会'
+      title: '2021中国(大湾区)进出口食品商洽会&年货节'
     }
   },
   {
@@ -808,7 +808,7 @@ let kunmingrouter = new Router({
     name: "mobilebaoming",
     component: mobilebaoming,
     meta: {
-      title: '2020东莞进出口食品商洽会'
+      title: '2021中国(大湾区)进出口食品商洽会&年货节'
     }
   },
   {
@@ -816,7 +816,7 @@ let kunmingrouter = new Router({
     name: "mobilegoodfoods",
     component: mobilegoodfoods,
     meta: {
-      title: '2020东莞进出口食品商洽会'
+      title: '2021中国(大湾区)进出口食品商洽会&年货节'
     }
   },
     // 移动端路由结束

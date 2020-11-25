@@ -236,7 +236,7 @@
                    </ul>
                  </div>
                </el-tab-pane>
-               <el-tab-pane label="2月1日" name="fourth">
+               <el-tab-pane label="1月31日" name="fourth">
                  <div class="layui-card-header font-24">
                    <span class="font-bold">上午</span>
                    <span class="font-18 color-666"></span>
@@ -244,7 +244,7 @@
                  <div class="card-body">
                    <ul>
                      <li class="info-list-item">
-                       <div class="now-date">2021年2月1日</div>
+                       <div class="now-date">2021年1月31日</div>
                        <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          开展中外食品科技产业发展对话活动
                        </div></router-link>
@@ -263,7 +263,7 @@
                  <div class="card-body">
                    <ul>
                      <li class="info-list-item">
-                       <div class="now-date">2021年2月1日</div>
+                       <div class="now-date">2021年1月31日</div>
                        <router-link :to="{ name: 'meetarr' }"><div class="now-title">
                          举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会
                        </div></router-link>
@@ -276,79 +276,79 @@
                    </ul>
                  </div>
                </el-tab-pane>
-               <el-tab-pane label="2月2日" name="five">
-                 <div class="layui-card-header font-24">
-                   <span class="font-bold">上午</span>
-                   <span class="font-18 color-666"></span>
-                 </div>
-                 <div class="card-body">
-                   <ul>
-                     <li class="info-list-item">
-                       <div class="now-date">2021年2月2日</div>
-                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
-                         开展中外食品科技产业发展对话活动
-                       </div></router-link>
-                       <div class="kms">
-                         <router-link :to="{ name: 'meetarr' }" >
-                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link>
-                       </div>
-                     </li>
-                   </ul>
-                 </div>
-                 <div class="layui-card-header font-24">
-                   <span class="font-bold">下午</span>
-                   <span class="font-18 color-666"></span>
-                 </div>
-                 <div class="card-body">
-                   <ul>
-                     <li class="info-list-item">
-                       <div class="now-date">2021年2月2日</div>
-                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
-                         举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会
-                       </div></router-link>
-                       <div class="kms">
-                         <router-link :to="{ name: 'meetarr' }">
-                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link>
-                       </div>
-                     </li>
-                   </ul>
-                 </div>
-               </el-tab-pane>
+<!--               <el-tab-pane label="2月1日" name="five">-->
+<!--                 <div class="layui-card-header font-24">-->
+<!--                   <span class="font-bold">上午</span>-->
+<!--                   <span class="font-18 color-666"></span>-->
+<!--                 </div>-->
+<!--                 <div class="card-body">-->
+<!--                   <ul>-->
+<!--                     <li class="info-list-item">-->
+<!--                       <div class="now-date">2021年2月1日</div>-->
+<!--                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">-->
+<!--                         开展中外食品科技产业发展对话活动-->
+<!--                       </div></router-link>-->
+<!--                       <div class="kms">-->
+<!--                         <router-link :to="{ name: 'meetarr' }" >-->
+<!--                           &lt;!&ndash; <img src="../assets/img/huifang2.png" alt="" /> &ndash;&gt;-->
+<!--                         </router-link>-->
+<!--                       </div>-->
+<!--                     </li>-->
+<!--                   </ul>-->
+<!--                 </div>-->
+<!--                 <div class="layui-card-header font-24">-->
+<!--                   <span class="font-bold">下午</span>-->
+<!--                   <span class="font-18 color-666"></span>-->
+<!--                 </div>-->
+<!--                 <div class="card-body">-->
+<!--                   <ul>-->
+<!--                     <li class="info-list-item">-->
+<!--                       <div class="now-date">2021年2月1日</div>-->
+<!--                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">-->
+<!--                         举行中华传统好食品保护与升级发展论坛及亚太食品产业供需合作对接会-->
+<!--                       </div></router-link>-->
+<!--                       <div class="kms">-->
+<!--                         <router-link :to="{ name: 'meetarr' }">-->
+<!--                           &lt;!&ndash; <img src="../assets/img/huifang2.png" alt="" /> &ndash;&gt;-->
+<!--                         </router-link>-->
+<!--                       </div>-->
+<!--                     </li>-->
+<!--                   </ul>-->
+<!--                 </div>-->
+<!--               </el-tab-pane>-->
                <!-- 2021年2月3日 -->
-               <el-tab-pane label="2月3日" name="six">
-                 <div class="card-body">
-                   <ul>
-                     <li class="info-list-item">
-                       <div class="now-date">2021年2月3日</div>
-                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
-                         线下展会结束
-                       </div></router-link>
-                       <div class="kms">
-                         <router-link :to="{ name: 'meetarr' }" >
-                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link>
-                       </div>
-                     </li>
-                   </ul>
-                 </div>
-                 <div class="card-body">
-                   <ul>
-                     <li class="info-list-item">
-                       <div class="now-date">2021年2月3日</div>
-                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">
-                         线上展会结束
-                       </div></router-link>
-                       <div class="kms">
-                         <router-link :to="{ name: 'meetarr' }" >
-                           <!-- <img src="../assets/img/huifang2.png" alt="" /> -->
-                         </router-link>
-                       </div>
-                     </li>
-                   </ul>
-                 </div>
-               </el-tab-pane>
+<!--               <el-tab-pane label="2月2日" name="six">-->
+<!--                 <div class="card-body">-->
+<!--                   <ul>-->
+<!--                     <li class="info-list-item">-->
+<!--                       <div class="now-date">2021年2月2日</div>-->
+<!--                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">-->
+<!--                         线下展会结束-->
+<!--                       </div></router-link>-->
+<!--                       <div class="kms">-->
+<!--                         <router-link :to="{ name: 'meetarr' }" >-->
+<!--                           &lt;!&ndash; <img src="../assets/img/huifang2.png" alt="" /> &ndash;&gt;-->
+<!--                         </router-link>-->
+<!--                       </div>-->
+<!--                     </li>-->
+<!--                   </ul>-->
+<!--                 </div>-->
+<!--                 <div class="card-body">-->
+<!--                   <ul>-->
+<!--                     <li class="info-list-item">-->
+<!--                       <div class="now-date">2021年2月2日</div>-->
+<!--                       <router-link :to="{ name: 'meetarr' }"><div class="now-title">-->
+<!--                         线上展会结束-->
+<!--                       </div></router-link>-->
+<!--                       <div class="kms">-->
+<!--                         <router-link :to="{ name: 'meetarr' }" >-->
+<!--                           &lt;!&ndash; <img src="../assets/img/huifang2.png" alt="" /> &ndash;&gt;-->
+<!--                         </router-link>-->
+<!--                       </div>-->
+<!--                     </li>-->
+<!--                   </ul>-->
+<!--                 </div>-->
+<!--               </el-tab-pane>-->
              </el-tabs>
            </div>
          </div>
