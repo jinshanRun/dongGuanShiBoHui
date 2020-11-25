@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div style="margin-bottom:100px;" @click="testShow()">
+    <div style="margin-bottom:100px;margin-top: 60px" @click="testShow()">
          <!-- 头部 -->
     <div class="header">
       <img src="../assets/img/banner.png" alt="">
@@ -16,21 +16,21 @@
             <!-- tab-container -->
             <mt-tab-container v-model="active" id="mobilecell">
                 <mt-tab-container-item id="tab-container1"  >
-                    <mt-cell  title="中华传统好食品馆" @click.native="company1('ff7632e456174ad4b52d6fc76968f35420201023172642')" :style="{color:colorflag}"></mt-cell>
-                    <mt-cell title="食品科技创新成果馆" @click.native="company3('d51083c57a99405fa3e7a5066a556f9720201023172826')" :style="{color:colorflag3}"></mt-cell>
-                    <mt-cell title="消费扶贫特色农副产品馆" @click.native="company6('324e4b21bb1b4647bc0a7d1a1ad6655820201023172934')" :style="{color:colorflag6}"></mt-cell>
-                    <mt-cell title="中国美食文化馆" @click.native="company5('2b944fcfa09e42d588dcb6b5ace83ea420201023172900')" :style="{color:colorflag5}"></mt-cell>
-                    <mt-cell  title="广东特色馆" @click.native="company2('5f29577d3fd249d1b59d4b9cc2d8ba3920201023172717')" :style="{color:colorflag2}"> </mt-cell>
-                    <mt-cell title="精品馆" @click.native="company7('35c6a237bfde4a4181beb441bf169de520201023172953')" :style="{color:colorflag7}"></mt-cell>
-                    <mt-cell title="综合馆" @click.native="company4('ee51986b1c97468eb20f28a1fc17826f20201023172841')" :style="{color:colorflag4}"></mt-cell>
+                    <mt-cell  title="进出口水果" @click.native="company1('ff7632e456174ad4b52d6fc76968f35420201023172642')" :style="{color:colorflag}"></mt-cell>
+                    <mt-cell title="粮油产品" @click.native="company3('d51083c57a99405fa3e7a5066a556f9720201023172826')" :style="{color:colorflag3}"></mt-cell>
+                    <mt-cell title="农产品" @click.native="company6('324e4b21bb1b4647bc0a7d1a1ad6655820201023172934')" :style="{color:colorflag6}"></mt-cell>
+                    <mt-cell title="水产品" @click.native="company5('2b944fcfa09e42d588dcb6b5ace83ea420201023172900')" :style="{color:colorflag5}"></mt-cell>
+                    <mt-cell  title="各类特色食品" @click.native="company2('5f29577d3fd249d1b59d4b9cc2d8ba3920201023172717')" :style="{color:colorflag2}"> </mt-cell>
+                    <mt-cell title="深加工食品" @click.native="company7('35c6a237bfde4a4181beb441bf169de520201023172953')" :style="{color:colorflag7}"></mt-cell>
+<!--                    <mt-cell title="综合馆" @click.native="company4('ee51986b1c97468eb20f28a1fc17826f20201023172841')" :style="{color:colorflag4}"></mt-cell>-->
 
                    
                 </mt-tab-container-item>
                 <mt-tab-container-item id="tab-container2">
-                    <mt-cell title="食品文化类" @click.native="yunshang1('c8610a0908b04ea0858f5ec22e9a4ed720201023173102')" :style="{color:Ycolorflag1}"></mt-cell>
-                    <mt-cell title="食品科技类" @click.native="yunshang2('218d0ba591b14f3daa39fcb9e0f4055b20201023173050')" :style="{color:Ycolorflag2}"></mt-cell>
-                    <mt-cell title="农副产品类" @click.native="yunshang3('f1327fceaa2440f796570fb48856407220201023173039')" :style="{color:Ycolorflag3}"></mt-cell>
-                    <mt-cell title="深加工食品类" @click.native="yunshang4('d6ccd8b213b2419fbd53fe4e5070ea4420201023173027')" :style="{color:Ycolorflag4}"></mt-cell>
+                    <mt-cell title="港澳台食品展" @click.native="yunshang1('c8610a0908b04ea0858f5ec22e9a4ed720201023173102')" :style="{color:Ycolorflag1}"></mt-cell>
+                    <mt-cell title="国外食品展" @click.native="yunshang2('218d0ba591b14f3daa39fcb9e0f4055b20201023173050')" :style="{color:Ycolorflag2}"></mt-cell>
+                    <mt-cell title="年货采购节" @click.native="yunshang3('f1327fceaa2440f796570fb48856407220201023173039')" :style="{color:Ycolorflag3}"></mt-cell>
+                    <mt-cell title="各大省团进出口食品展" @click.native="yunshang4('d6ccd8b213b2419fbd53fe4e5070ea4420201023173027')" :style="{color:Ycolorflag4}"></mt-cell>
                 </mt-tab-container-item>
              </mt-tab-container>
     </div>
@@ -477,7 +477,7 @@ export default {
 #mobilecell .mint-cell{
   float: left;
   text-align: center;
-  padding: 10px 35px;
+  padding: 10px 39px;
   border-right: 1px solid #e5e5e5;
   /* border-top:none */
   color:#666666;
@@ -497,7 +497,7 @@ export default {
     color: #0071fc;
 } */
 #mobilecell .mint-tab-container-wrap div:nth-child(2) a{
-    padding: 10px 85px!important;
+    padding: 10px 56px!important;
 }
 /* 热门展商 */
 .hotCommany{

@@ -99,7 +99,7 @@
       </mt-tab-item>
 </mt-tabbar>
 <div id="moresee" v-show="isShowDialog">
-  <ul  >
+  <ul >
       <li><router-link :to="{name:'mobilemeetarr'}">走进博览会</router-link></li>
       <li><router-link :to="{name:'mobilekunming'}">走进东莞</router-link></li>
       <li><router-link :to="{name:'mobileContact'}">联系我们</router-link></li>

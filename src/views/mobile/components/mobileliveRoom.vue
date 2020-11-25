@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div style="margin-bottom:100px" @click="testShow()">
+    <div style="margin-bottom:100px;margin-top: 60px;" @click="testShow()">
          <!-- 头部 -->
     <div class="header">
       <img src="../assets/img/banner.png" alt="">

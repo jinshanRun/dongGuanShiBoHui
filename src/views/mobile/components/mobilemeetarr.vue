@@ -29,7 +29,7 @@
                   <p style="font-size: 32px;color: #333333; font-weight: 600;height: 80px;line-height: 80px;">
                      <img src="../assets/img/comlo.png" alt="" style="vertical-align: bottom;margin-bottom: 24px;"> 会议介绍
                  </p>
-                    <div>
+                    <div style="text-align:justify ">
                       在新冠疫情和国际贸易战等多重挑战大背景下，“中国（大湾区）进出口食品商洽会暨首届东莞年货采购节”将主要以数字技术、AI/VR方式呈现，打通空间和地域界限；同时为加强食品文化交流、推动食品行业发展，也将在中国制造业名城东莞设置线下展馆，举办首届东莞年货节。
                     </div>
                  <p style="font-size: 32px;color: #333333; font-weight: 600;height: 80px;line-height: 80px;margin-top:10px">
