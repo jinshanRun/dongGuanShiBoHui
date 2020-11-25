@@ -282,7 +282,7 @@ export default {
             }
             span {
               font-size: 12px;
-              color: #6f89f6;
+              color: #f84f15;
               padding: 0 5px;
             }
           }

@@ -32,7 +32,7 @@
                   <div>
                     {{ item.companyIntroduce }}
                     <span
-                      style="float: right; color: #1028b6"
+                      style="float: right; color: #f84f15"
                       @click="companyYnDetail(item.companyUuid)"
                       >详情>></span
                     >
@@ -231,7 +231,7 @@ span{
   font-weight: 600;
 }
 .ZSlist span{
-  color: #455ae1;
+  color: #f84f15;
   margin-right: 5px;
 }
 .ZSlist  ul li{
