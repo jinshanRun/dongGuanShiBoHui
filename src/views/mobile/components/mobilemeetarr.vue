@@ -29,25 +29,27 @@
                   <p style="font-size: 32px;color: #333333; font-weight: 600;height: 80px;line-height: 80px;">
                      <img src="../assets/img/comlo.png" alt="" style="vertical-align: bottom;margin-bottom: 24px;"> 会议介绍
                  </p>
-                    <div>开幕式暨峰会将充分融合互联网、人工智能、新媒体等技术手段，呈现智能时代下，人与未来的相遇、人与智能科技的完美融合，创造身临其境的视觉体验，致力打造“线上线下、虚实结合、智能体验、内外联动”的线上盛会。大会拟邀请智能化领域知名专家和企业家发表主旨演讲；邀请行业领军企业重磅发布智能产业新产品、新技术、新业态、新应用、新成果。交流产业发展前沿，分享行业最新成果，共同推动智能产业高质量发展，实现为经济赋能、为生活添彩。</div>
+                    <div>
+                      在新冠疫情和国际贸易战等多重挑战大背景下，“中国（大湾区）进出口食品商洽会暨首届东莞年货采购节”将主要以数字技术、AI/VR方式呈现，打通空间和地域界限；同时为加强食品文化交流、推动食品行业发展，也将在中国制造业名城东莞设置线下展馆，举办首届东莞年货节。
+                    </div>
                  <p style="font-size: 32px;color: #333333; font-weight: 600;height: 80px;line-height: 80px;margin-top:10px">
                      <img src="../assets/img/comlo.png" alt="" style="vertical-align: bottom;margin-bottom: 24px;"> 会议安排
                  </p>
                  <div class="mmeetbck17">
-                   <p>11月15日</p>
+                   <p>1月28日</p>
                    <p>08:30-09:00 暖场环节 </p>
                    <p>09:00-09:30 线上开幕式</p>
                    <p>09:30-12:00 线上峰会及发布</p>
                  </div>
                   <div class="mmeetbck17">
-                   <p>11月16日</p>
+                   <p>1月29日</p>
                    <p>08:30-09:00 暖场环节 </p>
                    <p>09:00-09:30 线上开幕式</p>
                    <p>09:30-12:00 线上峰会及发布</p>
                  </div>
                 </mt-tab-container-item>
                 <mt-tab-container-item id="meet-container2" style="margin-top:30px">
-                    <mt-cell> 
+                    <mt-cell>
                       <div><img src="../assets/img/guestpep.png" alt=""> </div>
                       <div><img src="../assets/img/guest1.png" alt=""></div>
                     </mt-cell>
@@ -115,10 +117,10 @@ export default {
         }
     },
     mounted(){
-       
+
     },
     methods:{
-      
+
     },
 
 }

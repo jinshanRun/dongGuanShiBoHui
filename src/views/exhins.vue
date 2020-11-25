@@ -12,7 +12,7 @@
               </ul>
           </div>
           <div class="expo-content-right">
-              <p style="font-weight:600">2020中国（东莞）食文化国际交流博览会</p>
+              <p style="font-weight:600">2021中国（东莞）食文化国际交流博览会</p>
               <div class="expo-content-xq">
                <div>
                  <p>活动主题：</p>
@@ -20,7 +20,7 @@
                </div>
                <div>
                  <p>展会时间：</p>
-                 <p>2020年11月16日-22日</p>
+                 <p>2021年1月28日-2月23日</p>
                </div>
                <div>
                  <p>活动宗旨：</p>
