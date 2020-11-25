@@ -7,7 +7,7 @@
     </div>
 
 
- <div class="h30"></div>
+ <div class="mh20"></div>
   <!-- 直播列表 -->
         <div class="liveRoom">
             <div class="liveRoomp">直播</div>
@@ -25,31 +25,36 @@
                         </div>
                     </div>
                 </li>
-                <div class="h30"></div>
+                <div class="mh20"></div>
             </div>
             </ul>
         </div>
-<!-- 战略合作伙伴 -->
-<div class="zhanhe">
-  <p style="height:70px;line-height:70px;font-size: 32px;font-weight: 600;">战略合作伙伴</p>
-  <ul>
-    <li><img src="../assets/img/zh1.png" alt=""> </li>
-    <li><img src="../assets/img/zh2.png" alt=""> </li>
-    <li><img src="../assets/img/zh3.png" alt=""> </li>
-    <li><img src="../assets/img/zh4.png" alt=""> </li>
-  </ul>
-</div>
-<!-- 合作伙伴 -->
-<div class="zhanhe">
-  <p style="height:70px;line-height:70px;font-size: 32px;font-weight: 600;">合作伙伴 </p>
-  <ul>
-    <li><img src="../assets/img/he1.png" alt=""> </li>
-    <li><img src="../assets/img/he2.png" alt=""> </li>
-    <li><img src="../assets/img/he3.png" alt=""> </li>
-    <li><img src="../assets/img/he4.png" alt=""> </li>
-  </ul>
-</div>
-<div class="h30"></div>
+      <!-- 战略合作伙伴 -->
+      <div class="zhanhe">
+        <p style="height:110px;line-height:110px;font-size: 32px;font-weight: 600;"><img src="../assets/img/mtitleback.png" style="vertical-align: bottom;margin-bottom: 30px;margin-right: 10px"/>战略合作伙伴</p>
+        <ul>
+          <li><img src="../assets/img/zh1.png" alt=""> </li>
+          <li><img src="../assets/img/zh2.png" alt=""> </li>
+        </ul>
+        <ul>
+          <li><img src="../assets/img/zh3.png" alt=""> </li>
+          <li><img src="../assets/img/zh4.png" alt=""> </li>
+        </ul>
+      </div>
+      <div class="mh20"></div>
+      <!-- 合作伙伴 -->
+      <div class="zhanhe">
+        <p style="height:110px;line-height:110px;font-size: 32px;font-weight: 600;"><img src="../assets/img/mtitleback.png" style="vertical-align: bottom;margin-bottom: 30px;margin-right: 10px"/>合作伙伴 </p>
+        <ul>
+          <li><img src="../assets/img/he1.png" alt=""> </li>
+          <li><img src="../assets/img/he2.png" alt=""> </li>
+        </ul>
+        <ul>
+          <li><img src="../assets/img/he3.png" alt=""> </li>
+          <li><img src="../assets/img/he4.png" alt=""> </li>
+        </ul>
+      </div>
+      <div class="mh20"></div>
    </div>
 <!-- 固定底部选项栏 -->
 <mt-tabbar :fixed="true" id="mobilelive">
@@ -66,7 +71,7 @@
         直播
       </mt-tab-item>
        <mt-tab-item @click.native="isShow()">
-        <img slot="icon" src="../assets/img/mobilemore.png">
+        <img slot="icon" :src="Changemoreimg">
         更多
       </mt-tab-item>
 </mt-tabbar>
@@ -92,9 +97,10 @@ export default {
           title:'',
           showTime:null,
           url:''}],
-      page: 0,
-      size: 5,
-      isShowDialog: false,
+          page: 0,
+          size: 5,
+          isShowDialog: false,
+          Changemoreimg:require('../assets/img/mobilemore.png'),
         }
     },
     mounted(){
@@ -126,6 +132,7 @@ export default {
     },
     isShow(){
     this.isShowDialog=true
+      this.Changemoreimg = require('../assets/img/mobilemore2.png')
    },
    testShow(){
      this.isShowDialog=false
@@ -144,8 +151,8 @@ export default {
 .h40{
   height: 40px;
 }
-.h30{
-  height: 30px;
+.mh20{
+  height: 20px;
   background: #f9f9f9;
 }
 .liveRoomp{
@@ -216,18 +223,16 @@ export default {
   padding: 0 30px;
   overflow: hidden;
 }
-.zhanhe ul {
-  overflow: hidden;
-}
 .zhanhe ul:last-child{
   margin-bottom: 20px;
 }
 .zhanhe ul li{
   float: left;
-  margin-left: 29px;
+  margin-left: 54px;
+  margin-bottom: 30px;
 }
 .zhanhe ul li:first-child{
-   margin-left: 0px;
+  margin-left: 48px;
 }
 
 #moresee{
@@ -241,7 +246,7 @@ export default {
 }
 #moresee a{
   width: 190px;
-  color: #000000;
+  color: #fff;
 }
 #moresee ul li{
   height: 82px;
@@ -249,8 +254,7 @@ export default {
   text-align: center;
 }
 #mobilelive a:nth-child(3){
-  color: #ffffff;
-  background: #0071fc;
+  color: #ea4d30;
   border-right: 1px solid #e4e4e4;
 }
 #mobilelive a:nth-child(1){
@@ -258,5 +262,9 @@ export default {
 }
 #mobilelive a:nth-child(2){
   border-right: 1px solid #e4e4e4;
+}
+#mobilelive .mint-tab-item-icon > *{
+  width: auto;
+  height: auto;
 }
 </style>

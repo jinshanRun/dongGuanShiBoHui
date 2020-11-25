@@ -5,44 +5,45 @@
     <div class="header">
       <img src="../assets/img/banner.png" alt="">
        <div class="mobilevisitNumber">
-         <div></div>
-         <p>累计访问人数：<span>{{mobilevistnum}}</span> </p>
+         <p><span>{{mobilevistnum}}</span> </p>
       </div>
     </div>
-    <div class="h30"></div>
     <!-- 开幕式和闭幕式 -->
     <div class="partone" >
-      <p style="height:70px;line-height:70px;font-size: 32px;font-weight: 600;">主题峰会</p>
+      <p style="height:110px;line-height:110px;font-size: 32px;font-weight: 600;">
+        <span><img src="../assets/img/mtitleback.png" style="vertical-align: bottom;margin-bottom: 30px;margin-right: 10px"/></span>主题峰会
+      </p>
       <router-link :to="{name:'mobilemeetarr'}">
         <img src="../assets/img/kaibanner.png" alt="">
         <div class="kms">
           <p>开幕式</p>
-          <p>11月19日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上午</p>
+          <p>1月28日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上午</p>
         </div>
       </router-link>
          <router-link :to="{name:'mobilemeetarr'}" style="margin-left:18px">
         <img src="../assets/img/bibanner.png" alt="">
         <div class="kms">
           <p>闭幕式</p>
-          <p>11月25日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下午</p>
+          <p>1月31日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下午</p>
         </div>
      </router-link>
     </div>
-  <div class="h30"></div>
+  <div class="mh20"></div>
 <!-- 新闻中心 -->
 <div class="newsTwo">
-  <p style="height:70px;line-height:70px;font-size: 32px;font-weight: 600;">新闻中心<router-link :to="{name: 'mobilenewsList'}">更多>></router-link></p>
+  <p style="height:110px;line-height:110px;font-size: 32px;font-weight: 600;"> <span><img src="../assets/img/mtitleback.png" style="vertical-align: bottom;margin-bottom: 30px;margin-right: 10px"/></span>新闻中心<router-link :to="{name: 'mobilenewsList'}">更多>></router-link></p>
   <ul>
     <li v-for="(item,index) in newsList" :key="index" @click="wacthNewsxq(item)">
       <img :src="item.imgUrl" alt="">
       <div class="newstxt">
         <p>{{item.title}}</p>
         <div>{{item.summary}}</div> 
-        <span style="float:right;font-size:20px;color:#999999;">详情<span style="font-size:14px;margin-top:4px;vertical-align: top;margin-left:5px">>></span></span> 
+        <span style="float:right;font-size:20px;color:#999999;">进入详情</span>
         </div>
     </li>
   </ul>
 </div>
+      <div class="mh20"></div>
 <!-- 广告位 -->
 <div class="mobileadvers">
  <router-link :to="{name: 'mobilebaoming'}"><img src="../assets/img/madvers1.png" alt=""></router-link>
@@ -50,27 +51,33 @@
  <!-- <img src="../assets/img/madvers2.png" alt=""> -->
  <img src="../assets/img/madvers3.png" alt="">
 </div>
+      <div class="mh20"></div>
 <!-- 战略合作伙伴 -->
 <div class="zhanhe">
-  <p style="height:70px;line-height:70px;font-size: 32px;font-weight: 600;">战略合作伙伴</p>
+  <p style="height:110px;line-height:110px;font-size: 32px;font-weight: 600;"><img src="../assets/img/mtitleback.png" style="vertical-align: bottom;margin-bottom: 30px;margin-right: 10px"/>战略合作伙伴</p>
   <ul>
     <li><img src="../assets/img/zh1.png" alt=""> </li>
     <li><img src="../assets/img/zh2.png" alt=""> </li>
+  </ul>
+  <ul>
     <li><img src="../assets/img/zh3.png" alt=""> </li>
     <li><img src="../assets/img/zh4.png" alt=""> </li>
   </ul>
 </div>
+      <div class="mh20"></div>
 <!-- 合作伙伴 -->
 <div class="zhanhe">
-  <p style="height:70px;line-height:70px;font-size: 32px;font-weight: 600;">合作伙伴 </p>
+  <p style="height:110px;line-height:110px;font-size: 32px;font-weight: 600;"><img src="../assets/img/mtitleback.png" style="vertical-align: bottom;margin-bottom: 30px;margin-right: 10px"/>合作伙伴 </p>
   <ul>
     <li><img src="../assets/img/he1.png" alt=""> </li>
     <li><img src="../assets/img/he2.png" alt=""> </li>
+  </ul>
+  <ul>
     <li><img src="../assets/img/he3.png" alt=""> </li>
     <li><img src="../assets/img/he4.png" alt=""> </li>
   </ul>
 </div>
-<div class="h30"></div>
+<div class="mh20"></div>
 </div>
 <!-- 固定底部选项栏 -->
 <mt-tabbar :fixed="true" id="homebar">
@@ -87,7 +94,7 @@
         直播
       </mt-tab-item>
       <mt-tab-item @click.native="isShow()">
-        <img slot="icon" src="../assets/img/mobilemore.png">
+        <img slot="icon" :src="Changemoreimg">
         更多   
       </mt-tab-item>
 </mt-tabbar>
@@ -112,6 +119,7 @@ export default {
       size: 2 ,
       mobilevistnum: null,
       isShowDialog: false,
+      Changemoreimg:require('../assets/img/mobilemore.png'),
     }
   },
   mounted(){
@@ -169,6 +177,8 @@ export default {
     },
     isShow(){
     this.isShowDialog=true
+    this.Changemoreimg = require('../assets/img/mobilemore2.png')
+
    },
    testShow(){
      this.isShowDialog=false
@@ -178,7 +188,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 body,*,ul,li{
   padding: 0;
   margin: 0;
@@ -200,12 +210,15 @@ a,span{
 }
 #home{
   margin-bottom: 100px;
+  color:#74412e ;
+  margin-top: 60px;
 }
 .h40{
   height: 40px;
 }
-.h25{
-  height: 25px;
+.mh20{
+  height: 20px;
+  background: #f9f9f9;
 }
 .h30{
   height: 30px;
@@ -216,13 +229,8 @@ a,span{
 }
 .mobilevisitNumber{
   position: absolute;
-  right: 0px;
-  bottom: 4px;
-}
-.mobilevisitNumber div{
-  width: 280px;
-  height: 50px;
-  text-align: center;
+  right: 142px;
+  bottom: 16px;
 }
 .mobilevisitNumber p{
   position: absolute;
@@ -230,28 +238,31 @@ a,span{
   right: 20px;
   height: 56px;
   line-height: 56px;
-  font-size: 18px;
-  color: #00fffc;
+  color: #f3f96a;
   text-align: center;
 }
 .mobilevisitNumber p span{
-  font-size: 34px;
+  font-size: 14px;
+  font-family: "微软雅黑"!important;
+  /*font-weight: bold;*/
 }
 /* 开幕式和闭幕式 */
 .partone{
   padding: 0 30px;
 }
+.partone a{
+  width: 336px;
+}
 .kms{
   width: 330px;
+  color: #74412e;
 }
 .kms p:first-child{
   font-size: 30px;
-  color: #333333;
   line-height: 48px;
 }
 .kms p:nth-child(2){
   font-size: 24px;
-  color: #666666;
   line-height: 48px;
 }
 /* 新闻中心 */
@@ -262,7 +273,7 @@ a,span{
 .newsTwo p a{
   font-size: 24px;
   float: right;
-  color: #0071fc;
+  color: #74412e;
   font-weight: 500;
 }
 .newsTwo ul li{
@@ -288,6 +299,7 @@ a,span{
   overflow: hidden;	
 	text-overflow:ellipsis;
 	white-space: nowrap;
+  color: #333333;
 }
 .newstxt div{
   font-size: 24px;
@@ -304,8 +316,7 @@ a,span{
 
 /* 广告位 */
 .mobileadvers{
-  padding: 20px 0 0 0;
-  background: #f9f9f9;
+  padding: 30px 30px 10px 30px;
 }
 .mobileadvers img{
   margin-bottom: 20px;
@@ -315,18 +326,16 @@ a,span{
   padding: 0 30px;
   overflow: hidden;
 }
-.zhanhe ul {
-  overflow: hidden;
-}
 .zhanhe ul:last-child{
   margin-bottom: 20px;
 }
 .zhanhe ul li{
   float: left;
-  margin-left: 28px;
+  margin-left: 54px;
+  margin-bottom: 30px;
 }
 .zhanhe ul li:first-child{
-   margin-left: 0px;
+   margin-left: 48px;
 }
 
 
@@ -338,9 +347,9 @@ a,span{
   background: #ffffff!important;
 }
 .mint-tab-item-icon{
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
+  width: 50px;
+  height: 48px;
+  line-height: 48px;
 }
 .mint-tab-item-label{
   font-size: 24px;
@@ -352,8 +361,7 @@ a,span{
   margin: 10px auto;
 }
 #homebar a:first-child{
-  color: #ffffff;
-  background: #0071fc;
+  color: #ea4d30;
 }
 #homebar a{
   border-right: 1px solid #e4e4e4;
@@ -363,7 +371,7 @@ a,span{
 }
 .mint-tabbar > .mint-tab-item.is-selected{
   background: none;
-  color: #000000;
+  color: #74412e;
 }
 #moresee{
   position: fixed;;
@@ -376,11 +384,15 @@ a,span{
 }
 #moresee a{
   width: 190px;
-  color: #000000;
+  color: #fff;
 }
 #moresee ul li{
   height: 82px;
   line-height: 82px;
   text-align: center;
+}
+#homebar .mint-tab-item-icon > *{
+  width: auto;
+  height: auto;
 }
 </style>

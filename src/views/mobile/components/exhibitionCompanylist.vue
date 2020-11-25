@@ -83,7 +83,7 @@
         直播
       </mt-tab-item>
       <mt-tab-item @click.native="isShow()">
-        <img slot="icon" src="../assets/img/mobilemore.png">
+        <img slot="icon" :src="Changemoreimg">
         更多   
       </mt-tab-item>
 </mt-tabbar>
@@ -116,7 +116,7 @@ export default {
             Ycolorflag2: '',
             Ycolorflag3: '',
             Ycolorflag4: '',
-            
+            Changemoreimg:require('../assets/img/mobilemore.png'),
 
         }
     },
@@ -425,6 +425,7 @@ export default {
     },
     isShow(){
     this.isShowDialog=true
+      this.Changemoreimg = require('../assets/img/mobilemore2.png')
    },
    testShow(){
      this.isShowDialog=false
@@ -597,7 +598,7 @@ export default {
 }
 #moresee a{
   width: 190px;
-  color: #000000;
+  color: #fff;
 }
 #moresee ul li{
   height: 82px;
@@ -605,11 +606,15 @@ export default {
   text-align: center;
 }
 #exhibitionbar a:nth-child(2){
-  color: #ffffff;
-  background: #0071fc;
+  color: #ea4d30;
   border-right: 1px solid #e4e4e4;
+  border-left: 1px solid #e4e4e4;
 }
 #exhibitionbar a:nth-child(3){
   border-right: 1px solid #e4e4e4;
+}
+#exhibitionbar .mint-tab-item-icon > *{
+  width: auto;
+  height: auto;
 }
 </style>
