@@ -189,12 +189,12 @@ export default {
               margin: 0 auto;
               text-align: center;
               &-jieshao{
-                background: #fafafa;
+                background: #f9f9f9;
                 height: 180px;
-                text-align: left;
-                padding: 0 20px 34px 20px;
+                padding: 0 20px 40px 20px;
                 margin-top: 30px;
                 text-align: justify;
+                box-shadow: 0px 0px 10px 6px rgba(60,83,160,0.1);
               }
               &-anpai p{
                   width: 286px;
@@ -225,7 +225,7 @@ export default {
 }
  .meetarr-content-list li p{
         font-size: 18px;
-        color: #f9680b;
+        color: #ff9f15;
         font-weight: 580;
       }
  .meetarr-content-list li div{

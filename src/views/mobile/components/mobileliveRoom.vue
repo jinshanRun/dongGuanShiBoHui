@@ -20,8 +20,12 @@
                         <div class="liveRoomtxt">
                          <p style="font-size: 24px;color:#747474">开播时间</p>
                          <p style="font-size: 23px;color:#747474">{{item.showTime}}</p>
-                         <a :href=item.url target="_blank" class="liveRemind-join" v-if="Date.parse(item.showTime.replace(/-/g,'/')) < liveNowDate" >进入直播间</a>
-                         <a class="notLive" v-if="Date.parse(item.showTime.replace(/-/g,'/')) > liveNowDate" >暂未开始</a>
+<!--                         <a :href=item.url target="_blank" class="liveRemind-join" v-if="Date.parse(item.showTime.replace(/-/g,'/')) < liveNowDate" >进入直播间</a>-->
+<!--                         <a class="notLive" v-if="Date.parse(item.showTime.replace(/-/g,'/')) > liveNowDate" >暂未开始</a>-->
+<!--                          <a class="notLive" v-show="item.liveEnd" >直播已结束</a>-->
+                          <a :href=item.url target="_blank" class="liveRemind-join" v-show="item.liveIng" >进入直播间</a>
+                          <a class="notLive" v-show="item.liveStart" >暂未开始</a>
+                          <a class="notLive" v-show="item.liveEnd" >直播已结束</a>
                         </div>
                     </div>
                 </li>

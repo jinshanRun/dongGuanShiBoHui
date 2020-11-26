@@ -69,6 +69,7 @@ Vue.component(Actionsheet.name, Actionsheet);
 
 // 动画
 import animate from "animate.css"
+Vue.use(animate)
 
 Vue.config.productionTip = false
 

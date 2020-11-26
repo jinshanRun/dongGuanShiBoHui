@@ -37,7 +37,7 @@
     <div id="myPCcontent1">
     <!-- 六大块 -->
     <div class="contentbanner">
-    <div class="contentlistCon">
+    <div class="contentlistCon wow animate__animated animate__fadeInLeft">
        <ul class="contentlist">
         <li>
           <router-link :to="{ name: 'meetarr' }">
@@ -84,9 +84,9 @@
     </div>
     </div>
     <!-- 新闻中心 -->
-    <div class="newpart">
+    <div class="newpart ">
       <div style="width: 1200px;overflow: hidden;margin: 0 auto;">
-      <div class="newcon">
+      <div class="newcon  wow animate__animated animate__bounceInLeft">
         <p class="newsbck"><span>新闻中心</span><router-link :to="{name: 'news'}"><img src="../assets/img/more.png" alt=""></router-link></p>
         <ul style="position: relative;">
 <!--          <div style="position: absolute;top: 10px;right: 145px;" v-show="fireFlag"><img src="../assets/img/fire.png" alt="" class="qiuqiu"></div>-->
@@ -99,7 +99,7 @@
           </li>
         </ul>
       </div>
-      <div class="sevenzhan">
+      <div class="sevenzhan wow animate__animated animate__bounceInRight">
         <router-link :to="{ name: 'xsztVideo' }"><img src="../assets/img/newright.png" alt="点击进入详情"/>
         </router-link>
       </div>
@@ -109,7 +109,7 @@
     <!-- 云上展厅 -->
     <div id="myPCcontent2">
       <div style="position: absolute;left: 0;top:-52px"> <img src="../assets/img/meetingtopbck.png" style="width: 100%"/> </div>
-      <div class="yunhall">
+      <div class="yunhall wow animate__animated animate__flipInX">
       <ul>
         <li @mouseenter="changeEnterHallImg1()" @mouseleave="changeLeaveHallImg1()">
           <a href="https://720yun.com/t/c1vksqd77r9?scene_id=48573547" target="_blank"><img :src="yunShangimg1" alt="" /></a>
@@ -131,10 +131,10 @@
     <!-- 会议日程 and活动日程 -->
    <div id="myPCcontent3">
     <div class="metting">
-      <div style="float: left">
+      <div style="float: left" class="wow animate__animated animate__bounceInLeft">
         <img src="../assets/img/mettingleftbck.png"/>
       </div>
-      <div class="todayActivity">
+      <div class="todayActivity wow animate__animated animate__bounceInRight">
         <p class="Todaynewsbck"><span>今日活动</span> </p>
         <ul>
           <p class="todayp2">开幕式</p>
@@ -358,7 +358,7 @@
 
     <!-- 展商报名 媒体注册 -->
     <div id="myPCcontent4">
-      <div class="apply">
+      <div class="apply wow animate__animated animate__zoomInUp">
         <div>
           <router-link :to="{ name: 'baoming' }">
             <img src="../assets/img/apply1.png" alt="" />
@@ -383,10 +383,10 @@
     <div class="uni">
       <div style="position: absolute;left: 0;top:-52px;z-index: 666"> <img src="../assets/img/unitytopback.png"/> </div>
     <div class="unity">
-      <div class="unity_left">
+      <div class="unity_left wow animate__animated animate__bounceInLeft">
         <a href="http://www.dg.gov.cn/jjdz/dzyw/content/post_3405330.html"  target="_blank"><img src="../assets/img/unity_leftback.png" alt="" /></a>
       </div>
-      <div class="unity_right">
+      <div class="unity_right wow animate__animated animate__bounceInRight">
         <p><a href="http://www.dg.gov.cn/jjdz/dzyw/content/post_3405330.html" target="_blank">东莞：形成常态化疫情防控强大合力</a></p>
         <div class="fabutime">
           <span>发布时间：2020-11-18 14:18:20</span><span>来源：东莞时间网</span>
@@ -479,7 +479,8 @@
   </div>
 </template>
 <script>
-// import animate from "animate.css"
+import animate from "animate.css"
+import {WOW} from 'wowjs'
 export default {
   name: "HelloWorld",
   components: {
@@ -520,6 +521,14 @@ export default {
       this.ArtileListLoad()
       this.visitNumber()
       this.nowvisitNumber()
+      var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true,
+    })
+     wow.init();
   },
   methods: {
     // 实现日程tab内容切换
@@ -591,6 +600,8 @@ export default {
     changeLeaveHallImg4(){
       this.yunShangimg4 =  require('@/assets/img/hall4.png')
     },
+    // 新闻部分动画
+
   },
 };
 </script>
